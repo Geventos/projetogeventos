@@ -10,7 +10,7 @@
 		</li>
 		<li>
 			<a href="error.html">
-				<i class="fa fa-home nav_icon" aria-hidden="true"></i>
+				<i class="fa fa-calendar nav_icon" aria-hidden="true"></i>
 				<span class="nav-text">
 					Eventos
 				</span>
