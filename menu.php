@@ -15,6 +15,22 @@
 					Eventos
 				</span>
 			</a>
+		</li>
+		<li>
+			<a href="permissoes.php" align="center" >
+				<i  class=""></i>
+				<span class="nav-text">
+					Permissões
+				</span>
+			</a>
+		</li>
+		<li>
+			<a href="gerarCracha.php" align="center">
+				<i  class=""></i>
+				<span class="nav-text">
+					Gerar Crachá
+				</span>
+			</a>
 		</li>		
 	</ul>
 </nav>
