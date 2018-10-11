@@ -3,22 +3,22 @@ create database if not exists sisgev;
 use sisgev;
 
 CREATE TABLE `usuario` (
-  `id_usuario` int(10) auto_increment NOT NULL,
-  `nome_completo` varchar(50) NOT NULL,
-  `senha` varchar(20) NOT NULL,
-  `email` varchar(25) NOT NULL,
-  `permissao` int(10) NOT NULL,
+  `id_usuario` int(10) auto_increment,
+  `nome_completo` varchar(50) not null,
+  `senha` varchar(20) not null,
+  `email` varchar(25) not null,
+  `permissao` int(10) not null,
   PRIMARY KEY (`id_usuario`)
 ) ;
 
 CREATE TABLE `permissao`(
-`id_evento` int(10) NOT NULL,
-`id_usuario` int(10) NOT NULL,
-`tipo_permissao` int(10) NOT NULL
+`id_evento` int(10)  not null,
+`id_usuario` int(10) not null,
+`tipo_permissao` int(10) not null
 );
 
 CREATE TABLE `evento`(
-id_evento int(10) auto_increment not null,
+id_evento int(10) auto_increment,
 nome varchar(50) not null,
 data_ini date not null,
 data_fim date not null,
@@ -28,7 +28,7 @@ contatos varchar(100)
 );
 
 create table `inscrito`(
-id_participante int(10) auto_increment not null,
+id_participante int(10) auto_increment,
 nome_participante varchar(50) not null,
 cpf int(11) not null,
 instituicao varchar(50),
