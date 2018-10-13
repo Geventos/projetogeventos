@@ -8,4 +8,4 @@ select * from evento where nome like '%v%';
 select * from inscrito where nome_participante like '%t%';
 
 #Permissão
-select * from permissao;
+select * from evento;
