@@ -1,5 +1,4 @@
 <?php
-
 class Evento {
     private $nome;
     private $sobre;
@@ -52,6 +51,5 @@ class Evento {
     }
     public function setContatos($contatos) {
         $this->contatos = $contatos;
-    }    
-    
+    }        
 }
