@@ -1,4 +1,4 @@
-<link rel="shortcut icon" href="assets/images/logo2.png" type="image/x-icon">
+<link rel="shortcut icon" href="img/calendar.png" type="image/x-icon">
 <link rel="stylesheet" href="assets/web/assets/mobirise-icons/mobirise-icons.css">
 <link rel="stylesheet" href="assets/tether/tether.min.css">
 <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
