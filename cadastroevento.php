@@ -51,7 +51,7 @@
 										<div class="row">
 											<div class="col-sm-8">
 												<label for="nomeevento">
-													Name:*
+													Nome:*
 												</label>
 												<input type="text" name="nomeevento" class="form-control" id="nomeevento" placeholder="Nome do evento" required>
 											</div>
