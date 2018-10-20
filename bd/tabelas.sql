@@ -7,7 +7,7 @@ CREATE TABLE `usuario` (
   `nome_completo` varchar(50) not null,
   `senha` varchar(20) not null,
   `email` varchar(25) not null,
-  `permissao` int(10) not null,
+  `permissao` int(10) default 0,
   primary key (`id_usuario`)
 ) ;
 
