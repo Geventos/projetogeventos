@@ -1,9 +1,9 @@
-<!--A Design by W3layouts
-Author: W3layout
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
--->
+ <?php        require_once("classes/Conexao.php");
+                 require_once("classes/DALEvento.php");
+                 $cx = new Conexao();
+                 $consulta ="SELECT * FROM evento ORDER BY data_ini";
+                    $con = mysqli_query($cx->getBanco(), $consulta);    
+      ?>
 <!DOCTYPE html>
 <head>
 	<title>SisGEv | Eventos</title>
@@ -44,45 +44,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 							</div>
 						</div>
 					</div>
-					<div class="bs-docs-example wow fadeInUp animated" data-wow-delay=".5s">
-						<table class="table table-hover">
-							<thead>
-								<tr>
-									<th>Nome</th>
-									<th>Data Inicio</th>
-									<th>Data Fim</th>
-									<th></th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>XVIII EPOPET - ENCONTRO POTIGUAR DOS GRUPOS PET</td>
-									<td align="center">19/09/2018</td>
-									<td align="center">19/09/2018</td>
-									<td><a href="#" title="Ver Detalhes do Evento"><i class="fa fa-search"></i></a></td>
-								</tr>
-								<tr>
-									<td>I SEMINÁRIO DE DIREITO DIGITAL - NEDDIG </td>
-									<td align="center">20/09/2018</td>
-									<td align="center">20/09/2018</td>
-									<td><a href="#" title="Ver Detalhes do Evento"><i class="fa fa-search"></i></a></td>
-								</tr>
-							</tbody>
-						</table>
-						<hr>
-						<nav align="center">
-							<ul class="pagination pagination-lg">
-								<li><a href="#" aria-label="Previous"><span aria-hidden="true">«</span></a></li>
-								<li><a href="#">1</a></li>
-								<li><a href="#">2</a></li>
-								<li><a href="#">3</a></li>
-								<li><a href="#">4</a></li>
-								<li><a href="#">5</a></li>
-								<li><a href="#" aria-label="Next"><span aria-hidden="true">»</span></a></li>
-							</ul>
-						</nav>
-						</hr>
-					</div>
+					<?php require_once("tabEventosBE.php"); ?>
 				</div>
 			</div>
 		</div>
