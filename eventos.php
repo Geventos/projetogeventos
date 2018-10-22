@@ -1,3 +1,11 @@
+    <?php        require_once("classes/Conexao.php");
+                 require_once("classes/DALEvento.php");
+                 $cx = new Conexao();
+                 $consulta ="SELECT * FROM evento ORDER BY data_ini";
+                    $con = mysqli_query($cx->getBanco(), $consulta);
+
+             
+      ?>
 <!DOCTYPE html>
 <html >
   <head>
@@ -23,32 +31,9 @@
                 </div> 
             </div>
           </div>
-          <div class="container scroll">
-            <table class="table isSearch" cellspacing="0">
-              <thead>
-                <tr>
-                  <th>Nome</th>
-                  <th>Data Inicio</th>
-                  <th>Data Fim</th>
-                  <th title="Detalhes do evento"></th>
-                </tr>
-              </thead>
-              <tbody>          
-                <tr>             
-                  <td class="body-item mbr-fonts-style display-7">XVIII EPOPET - ENCONTRO POTIGUAR DOS GRUPOS PET</td>
-                  <td class="body-item mbr-fonts-style display-7">19/09/2018</td>
-                  <td class="body-item mbr-fonts-style display-7">19/09/2018</td>
-                  <td><a href=""><i class="mbri-pages" title="Detalhes do evento"></i></a></i></td>
-                </tr>
-                <tr>            
-                  <td class="body-item mbr-fonts-style display-7">I SEMINÁRIO DE DIREITO DIGITAL - NEDDIG </td>
-                  <td class="body-item mbr-fonts-style display-7">20/09/2018</td>
-                  <td class="body-item mbr-fonts-style display-7">20/09/2018</td>
-                  <td><a href=""><i class="mbri-pages" title="Detalhes do evento"></i></a></td>
-                </tr>           
-              </tbody>
-            </table>
-          </div>
+          <?php 
+            require_once("tabEventosFE.php");
+          ?>
         </div>
       </div>
     </section>
