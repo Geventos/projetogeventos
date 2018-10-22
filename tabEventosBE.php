@@ -21,6 +21,7 @@
 			<td align="center"><a class="fa fa-edit" href="editarevento.php?cod=<?php echo $dado["cod"]; ?>"></a></td>
 			<td class="body-item mbr-fonts-style display-7"><a class="fa fa-trash" href="excluir.php?cod=<?php echo $dado["cod"]; ?>"></a></td>
 		</tr>
+		<?php } ?> 
 	</tbody>
 </table>
 </div>
