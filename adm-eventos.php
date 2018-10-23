@@ -36,7 +36,6 @@
 						<div class="row">
 							<div class="col-sm-12">
 								<div class="col-md-10">
-									<p><a href="#"><i class="fa fa-search"></i></a> Ver Detalhes do Evento.</p>
 								</div>
 								<div class="col-md-2">
 									<button type="submit" class="btn btn-primary btn-block" title="Adicionar Novo Evento."><i class="fa fa-plus-circle"></i> Add Evento</button>
