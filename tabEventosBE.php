@@ -19,7 +19,7 @@
 			<td align="center"><?php echo date ("d/m/Y", strtotime($linhas['data_fim']));?></td>
 			<td  align="center">  <a class="fa fa-search" href="detalhesevento.php?cod=<?php echo $dado["cod"]; ?>"></a> </td>
 			<td align="center"><a class="fa fa-edit" href="editarevento.php?cod=<?php echo $dado["cod"]; ?>"></a></td>
-			<td class="body-item mbr-fonts-style display-7" align="center"><a class="fa fa-trash-o" href="excluir.php?cod=<?php echo $dado["cod"]; ?>"></a></td>
+			<td class="body-item mbr-fonts-style display-7" align="center"><a class="fa fa-trash-o" href="deletar-evento.php?id_evento=<?php echo $linhas[0];?>"></a></td>
 		</tr>
 		<?php } ?> 
 	</tbody>
