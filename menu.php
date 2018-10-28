@@ -1,7 +1,7 @@
 <nav class="main-menu">
 	<ul>
 		<li>
-			<a href="home.php">
+			<a href="homebe.php">
 				<i class="fa fa-home nav_icon" aria-hidden="true"></i>
 				<span class="nav-text">
 					Home
@@ -12,7 +12,7 @@
 
 	
 
-			<a href="error.html">
+			<a href="adm-eventos.php">
 				<i class="fa fa-calendar nav_icon" aria-hidden="true"></i>
 				<span class="nav-text">
 					Eventos
