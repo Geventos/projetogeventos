@@ -31,14 +31,9 @@ class DALEvento {
         }
     }
 
-    public function Deletar($evento) {
-        $sql = "delete from evento where ";
-        $sql = $sql . "nome = " . $evento->getNome() . " and ";
-        $sql = $sql . "data_ini = " . $evento->getDatainicio() . " and ";
-        $sql = $sql . "data_fim = " . $evento->getDatafim() . " and ";
-        $sql = $sql . "sobre = " . $evento->getSobre() . " and ";
-        $sql = $sql . "programacao = " . $evento->getProgramacao() . " and ";
-         $sql = $sql . "contatos = " . $evento->getContatos() . ";";
+    public function Deletar($idevento) {
+        $sql = "delete from evento where id_evento = ";
+        $sql = $sql . $idevento . ";";
         $banco = $this->conexao->getBanco();
         $banco->query($sql);
         $linhas = mysqli_affected_rows($banco);
@@ -46,10 +41,12 @@ class DALEvento {
         if($linhas == 1){
             echo "<script type='text/javascript'>
                     alert('Remoção efetuada com sucesso!');
+                    location.href='adm-eventos.php';
                 </script>";
          }else{
             echo "<script type='text/javascript'>
                     alert('Remoção NÃO efetuada!');
+                    location.href='adm-eventos.php';
                 </script>";
         }
     }
