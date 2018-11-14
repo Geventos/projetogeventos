@@ -1,9 +1,10 @@
- <?php        require_once("classes/Conexao.php");
-                 require_once("classes/DALEvento.php");
-                 $cx = new Conexao();
-                 $consulta ="SELECT * FROM evento ORDER BY data_ini";
-                    $con = mysqli_query($cx->getBanco(), $consulta);    
-      ?>
+ <?php
+ 	require_once("classes/Conexao.php");
+    require_once("classes/DAOEvento.php");
+    $cx = new Conexao();
+    $consulta ="SELECT * FROM evento ORDER BY data_ini";
+    $con = mysqli_query($cx->getBanco(), $consulta);    
+?>
 <!DOCTYPE html>
 <head>
 	<title>SisGEv | Eventos</title>
@@ -20,8 +21,8 @@
 <body class="dashboard-page">
 	<!--MENU e TOPO-->
 	<?php
-	include("menu.php");
-	include("topo.php");
+		include("menu.php");
+		include("topo.php");
 	?>
 	<!--FIM MENU e TOPO-->
 	<div class="main-grid">
@@ -53,7 +54,7 @@
 </div>
 <!-- Rodapé -->
 <?php
-include("rodape.php");
+	include("rodape.php");
 ?>
 <!-- Fim Rodapé -->
 </section>
