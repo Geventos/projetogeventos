@@ -7,13 +7,9 @@
 	</nav>
 	<section class="title-bar">
 		<div class="logo">
-			<h1><a href="index.html"><img src="img/logo.png" alt="" />SisGEv</a></h1>
+			<h1><a href="adm-eventos.php"><img src="img/logo.png" alt="" />SisGEv</a></h1>
 		</div>
-		<div class="full-screen">
-			<section class="full-top">
-				<button id="toggle"><i class="fa fa-arrows-alt" aria-hidden="true"></i></button>
-			</section>
-		</div>
+		
 		<div class="header-right">
 			<div class="profile_details_left">
 				<div class="profile_details">

@@ -26,18 +26,18 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true">
               <li class="nav-item">
-                  <a class="nav-link link text-white display-4" href="https://mobirise.com">
+                  <a class="nav-link link text-white display-4" href="homefe.php">
                     <span class="mbri-home mbr-iconfont mbr-iconfont-btn"></span>Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link link text-white display-4" href="https://mobirise.com">
+                <a class="nav-link link text-white display-4" href="eventos.php">
                   <span class="mbri-home mbr-iconfont mbr-iconfont-btn"></span>Eventos</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link link text-white display-4" href="https://mobirise.com">
+                <a class="nav-link link text-white display-4" href="sobre.php">
                   <span class="mbri-home mbr-iconfont mbr-iconfont-btn"></span>Sobre</a></li>
                 <li class="nav-item">
-                  <a class="nav-link link text-white display-4" href="https://mobirise.com">
+                  <a class="nav-link link text-white display-4" href="ajuda.php">
                     <span class="mbri-search mbr-iconfont mbr-iconfont-btn"></span>Ajuda</a>
                 </li>
             </ul>            
