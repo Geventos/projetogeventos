@@ -78,10 +78,10 @@
     if($_POST){
         require_once("classes/Usuario.php");
         require_once("classes/Conexao.php");
-        require_once("classes/DALUsuario.php");
+        require_once("classes/DAOUsuario.php");
         $usuario = new Usuario($_POST['nome'], $_POST['email'], $_POST['senha']);
         $cx = new Conexao();
-        $dal = new DALUsuario($cx);
-        $dal->Criar($usuario);        
+        $dao = new DAOUsuario($cx);
+        $dao->Criar($usuario);        
     }
 ?>
