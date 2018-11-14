@@ -125,10 +125,10 @@
     if($_POST){
     	require_once("classes/Evento.php");
     	require_once("classes/Conexao.php");
-    	require_once("classes/DALEvento.php");
+    	require_once("classes/DAOEvento.php");
         $evento = new Evento($_POST['nomeevento'], $_POST['sobreevento'], $_POST['datainicio'], $_POST['datafim'], $_POST['programacao'], $_POST['contatos']);
         $cx = new Conexao();
-        $dal = new DALEvento($cx);
-        $dal->Criar($evento);        
+        $dao = new DAOEvento($cx);
+        $dao->Criar($evento);        
     }
 ?>
