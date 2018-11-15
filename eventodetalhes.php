@@ -1,4 +1,4 @@
-<?php  
+<?php
 require_once("classes/Conexao.php");
 require_once("classes/DAOEvento.php");
 $cx = new Conexao();
@@ -16,97 +16,97 @@ $linha = mysqli_fetch_assoc($con);
 	Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
 	<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 	<?php
-        include("links.php");
-        include("scripts.php");
-    ?>
+	include("links.php");
+	include("scripts.php");
+	?>
 </head>
 <body class="dashboard-page">
 	<!--MENU e TOPO-->
 	<?php
-        include("menu.php");
-        include("topo.php");
-    ?>
+	include("menu.php");
+	include("topo.php");
+	?>
 	<!--FIM MENU e TOPO-->
-		<div class="main-grid">
-			<div class="agile-grids">
-				<!-- grids -->
-				<div class="grids">
-					<div class="progressbar-heading grids-heading">
-						<h2>Evento | <?php echo $linha['nome']?></h2>
-					</div>
-					<div class="panel panel-widget forms-panel">
-						<div class="forms">
-							<div class="inline-form widget-shadow">
-								<div class="form-body">
-									<form action="#" method="post">
-										<div class="row">
-											<div class="col-sm-8">
-												<label for="nomeevento">
-													Name:*
-												</label>
-												<input type="text" name="nomeevento" class="form-control" id="nomeevento" value="<?php echo $linha['nome']?>" disabled>
+	<div class="main-grid">
+		<div class="agile-grids">
+			<!-- grids -->
+			<div class="grids">
+				<div class="progressbar-heading grids-heading">
+					<h2>Evento | <?php echo $linha['nome']?></h2>
+				</div>
+				<div class="panel panel-widget forms-panel">
+					<div class="forms">
+						<div class="inline-form widget-shadow">
+							<div class="form-body">
+								<form action="#" method="post">
+									<div class="row">
+										<div class="col-sm-8">
+											<label for="nomeevento">
+												Name:*
+											</label>
+											<input type="text" name="nomeevento" class="form-control" id="nomeevento" value="<?php echo $linha['nome']?>" disabled>
+										</div>
+										<div class="col-sm-2">
+											<label for="datainicio">
+												Data Inicio:*
+											</label>
+											<input type="text" name="pdatainicio" class="form-control" id="datainicio" value="<?php echo date ("d/m/Y", strtotime($linha['data_ini']));?>" disabled>
+										</div>
+										<div class="col-sm-2">
+											<label for="datafim">
+												Data fim:
+											</label>
+											<input type="test" name="datafim" class="form-control" id="datafim" value="<?php echo date ("d/m/Y", strtotime($linha['data_fim']));?>" disabled>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-sm-8">
+											<label for="sobreevento">
+												Sobre o Evento:
+											</label>
+											<textarea class="form-control" id="sobreevento" disabled><?php echo $linha['sobre'];?></textarea>
+										</div>
+										<div class="col-sm-4">
+											<label for="contatos">
+												Contatos:
+											</label>
+											<textarea class="form-control" id="contatos" disabled><?php echo $linha['contatos'];?></textarea>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-sm-12">
+											<label for="programacao">
+												Programação:
+											</label>
+											<textarea class="form-control" id="programacao" disabled><?php echo $linha['programação'];?></textarea>
+										</div>
+									</div>
+									<hr>
+									<div class="row">
+										<div class="col-sm-12">
+											<div class="col-xs-2">
+												<button type="submit" class="btn btn-primary btn-block">ALTERAR</button>
 											</div>
-											<div class="col-sm-2">
-												<label for="datainicio">
-													Data Inicio:*
-												</label>
-												<input type="text" name="pdatainicio" class="form-control" id="datainicio" value="<?php echo date ("d/m/Y", strtotime($linha['data_ini']));?>" disabled>
-											</div>
-											<div class="col-sm-2">
-												<label for="datafim">
-													Data fim:
-												</label>
-												<input type="test" name="datafim" class="form-control" id="datafim" value="<?php echo date ("d/m/Y", strtotime($linha['data_fim']));?>" disabled>
+											<div class="col-xs-2">
+												<button type="submit" class="btn btn-primary btn-block">CANCELAR</button>
 											</div>
 										</div>
-										<div class="row">
-											<div class="col-sm-8">						
-												<label for="sobreevento">
-													Sobre o Evento:
-												</label>
-												<textarea class="form-control" id="sobreevento" disabled><?php echo $linha['sobre'];?></textarea>			
-											</div>
-											<div class="col-sm-4">												
-												<label for="contatos">
-													Contatos:
-												</label>
-												<textarea class="form-control" id="contatos" disabled><?php echo $linha['contatos'];?></textarea>				
-											</div>
-										</div>
-										<div class="row">
-											<div class="col-sm-12">						
-													<label for="programacao">
-														Programação:
-													</label>
-													<textarea class="form-control" id="programacao" disabled>Em breve.</textarea>				
-											</div>
-										</div>
-										<hr>
-										<div class="row">
-											<div class="col-sm-12">
-												<div class="col-xs-2">						
-													<button type="submit" class="btn btn-primary btn-block">ALTERAR</button>		
-												</div>
-												<div class="col-xs-2">						
-													<button type="submit" class="btn btn-primary btn-block">CANCELAR</button>	
-												</div>
-											</div>
-										</div>
+									</div>
 									</hr>
-									</form>
-								</div>
+								</form>
 							</div>
 						</div>
 					</div>
 				</div>
-				<!-- //grids -->
 			</div>
+			<!-- //grids -->
 		</div>
-		<!-- Rodapé -->
-		<?php
-        	include("rodape.php");
-    	?>		
-		<!-- Fim Rodapé -->
-	</section>
+	</div>
+	<!-- Rodapé -->
+	<?php
+	include("rodape.php");
+	?>
+	<!-- Fim Rodapé -->
+</section>
 </body>
 </html>
