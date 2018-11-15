@@ -28,12 +28,13 @@ CREATE TABLE `evento`(
   primary key (`id_evento`)
 );
 
-create table `inscrito`(
+create table `inscricao`(
    `id_participante` int(10) auto_increment,
    `nome_participante` varchar(50) not null,
    `cpf` int(11) not null,
    `instituicao` varchar(50),
    `id_evento` int(10) not null,
+   `status` varchar(50) default 'inscrito',
 	primary key (`id_participante`)
 );
 
