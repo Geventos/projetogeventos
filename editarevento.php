@@ -50,13 +50,13 @@ $linha = mysqli_fetch_assoc($con);
 											<label for="datainicio">
 												Data Inicio:*
 											</label>
-											<input type="text" name="pdatainicio" class="form-control" id="datainicio" value="<?php echo date ("d/m/Y", strtotime($linha['data_ini']));?>">
+											<input type="date" name="pdatainicio" class="form-control" id="datainicio" value="<?php echo date ("Y-m-d", strtotime($linha['data_ini']));?>">
 										</div>
 										<div class="col-sm-2">
 											<label for="datafim">
 												Data fim:
 											</label>
-											<input type="test" name="datafim" class="form-control" id="datafim" value="<?php echo date ("d/m/Y", strtotime($linha['data_fim']));?>">
+											<input type="date" name="datafim" class="form-control" id="datafim" value="<?php echo date ("Y-m-d", strtotime($linha['data_fim']));?>">
 										</div>
 									</div>
 									<div class="row">
@@ -78,7 +78,7 @@ $linha = mysqli_fetch_assoc($con);
 											<label for="programacao">
 												Programação:
 											</label>
-											<textarea class="form-control" id="programacao"><?php echo $linha['programação'];?></textarea>
+											<textarea class="form-control" id="programacao"><?php echo $linha['programacao'];?></textarea>
 										</div>
 									</div>
 									<hr>
