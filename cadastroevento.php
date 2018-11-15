@@ -1,3 +1,11 @@
+<?php 
+	session_start();
+	if(!empty($_SESSION['id_usuario'])){
+	}else{
+		header("Location: login.php");
+	}
+	include_once("sessao.php");
+?>
 <!DOCTYPE html>
 <head>
 	<title>SisGEv | Cadastro de Evento</title>
