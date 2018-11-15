@@ -9,3 +9,5 @@ select * from inscrito where nome_participante like '%t%';
 
 #Permissão
 select * from evento;
+
+select * from usuario;
