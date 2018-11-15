@@ -1,11 +1,17 @@
-<?php  
-require_once("classes/Conexao.php");
-require_once("classes/DAOEvento.php");
-$cx = new Conexao();
-$codigo  = $_GET['id_evento'];
-$consulta = "SELECT * FROM evento WHERE id_evento = $codigo limit 1";
-$con = mysqli_query($cx->getBanco(), $consulta);
-$linha = mysqli_fetch_assoc($con);
+<?php
+	session_start();
+	if(!empty($_SESSION['id_usuario'])){  
+		require_once("classes/Conexao.php");
+		require_once("classes/DAOEvento.php");
+		$cx = new Conexao();
+		$codigo  = $_GET['id_evento'];
+		$consulta = "SELECT * FROM evento WHERE id_evento = $codigo limit 1";
+		$con = mysqli_query($cx->getBanco(), $consulta);
+		$linha = mysqli_fetch_assoc($con);
+	}else{
+	header("Location: login.php");
+	}
+	include_once("sessao.php");
 ?>
 <!DOCTYPE html>
 <head>
