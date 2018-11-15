@@ -39,7 +39,9 @@
 								<div class="col-md-10">
 								</div>
 								<div class="col-md-2">
-									<button type="submit" class="btn btn-primary btn-block" title="Adicionar Novo Evento."><i class="fa fa-plus-circle"></i> Add Evento</button>
+									<form action="cadastroevento.php">
+										<button type="submit" class="btn btn-primary btn-block" title="Adicionar Novo Evento."><i class="fa fa-plus-circle"></i> Add Evento</button>
+									</form>
 								</div>
 							</div>
 						</div>
