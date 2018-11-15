@@ -22,9 +22,10 @@
 								</div>
 							</a>
 							<ul class="dropdown-menu drp-mnu">
-								<li> <a href="#"><i class="fa fa-cog"></i> Settings</a> </li>
-								<li> <a href="#"><i class="fa fa-user"></i> Profile</a> </li>
-								<li> <a href="#"><i class="fa fa-sign-out"></i> Logout</a> </li>
+								<h5><?php echo $_SESSION['nome_completo']; ?></h5>
+								<br>
+								<li> <a href="#"><i class="fa fa-cog"></i> Editar perfil</a> </li>
+								<li> <a href="sair.php"><i class="fa fa-sign-out"></i> Sair</a> </li>
 							</ul>
 						</li>
 					</ul>
