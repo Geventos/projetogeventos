@@ -4,6 +4,7 @@
 	<script src="js/screenfull.js"></script>
 	<script src="js/bootstrap.js"></script>
 	<script src="js/proton.js"></script>
+	<script src="js/instascan.min.js"></script>
 	
 	<script>
 	$(function () {
