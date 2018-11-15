@@ -1,13 +1,12 @@
 <?php  
 require_once("classes/Conexao.php");
-require_once("classes/DALEvento.php");
+require_once("classes/DAOEvento.php");
 $cx = new Conexao();
 $codigo  = $_GET['id_evento'];
 $consulta = "SELECT * FROM evento WHERE id_evento = $codigo limit 1";
 $con = mysqli_query($cx->getBanco(), $consulta);
 $linha = mysqli_fetch_assoc($con);
 ?>
-
 <!DOCTYPE html>
 <head>
 	<title>SisGEv | Evento - <?php echo $linha['nome']?></title>
