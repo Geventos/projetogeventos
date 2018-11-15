@@ -42,6 +42,7 @@ session_start();
                     unset($_SESSION['msg']);
                     }
                     ?>
+                    <br>
               </div>
               <div data-for="email">
                 <div class="form-group">
