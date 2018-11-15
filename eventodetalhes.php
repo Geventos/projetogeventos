@@ -78,7 +78,7 @@ $linha = mysqli_fetch_assoc($con);
 											<label for="programacao">
 												Programação:
 											</label>
-											<textarea class="form-control" id="programacao" disabled><?php echo $linha['programação'];?></textarea>
+											<textarea class="form-control" id="programacao" disabled><?php echo $linha['programacao'];?></textarea>
 										</div>
 									</div>
 									<hr>
