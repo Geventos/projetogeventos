@@ -48,3 +48,10 @@ values('I SIMPÓSIO DE FISIOTERAPIA DA FACISA', '2018-10-19', '2018-10-20');
 insert into evento(nome, data_ini, data_fim)
 values('V SEMANA DE MATEMÁTICA DO CERES/Caicó', '2018-10-24', '2018-10-26');
 
+#Inscrição
+insert into inscricao(nome_participante, cpf, id_evento)
+values('Cristovão Lima', 111111111111, 1);
+
+insert into inscricao(nome_participante, cpf, id_evento)
+values('Alexandre Araujo', 22222222222, 1);
+
