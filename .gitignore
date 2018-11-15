@@ -11,3 +11,4 @@ classes/DALUsuario.php-tmp
 adm-eventos.php-tmp
 editarevento.php-tmp
 login.php-tmp
+*.php-tmp
