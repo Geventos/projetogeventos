@@ -1,9 +1,10 @@
-    <?php        require_once("classes/Conexao.php");
-                 require_once("classes/DALEvento.php");
-                 $cx = new Conexao();
-                 $consulta ="SELECT * FROM evento ORDER BY data_ini";
-                    $con = mysqli_query($cx->getBanco(), $consulta);    
-      ?>
+<?php        
+require_once("classes/Conexao.php");
+require_once("classes/DAOEvento.php");
+$cx = new Conexao();
+$consulta ="SELECT * FROM evento ORDER BY data_ini";
+$con = mysqli_query($cx->getBanco(), $consulta);    
+?>
 <!DOCTYPE html>
 <html >
   <head>
