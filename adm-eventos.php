@@ -1,9 +1,15 @@
  <?php
- 	require_once("classes/Conexao.php");
-    require_once("classes/DAOEvento.php");
-    $cx = new Conexao();
-    $consulta ="SELECT * FROM evento ORDER BY data_ini";
-    $con = mysqli_query($cx->getBanco(), $consulta);    
+ 	session_start();
+	if(!empty($_SESSION['id_usuario'])){
+	 	require_once("classes/Conexao.php");
+	    require_once("classes/DAOEvento.php");
+	    $cx = new Conexao();
+	    $consulta ="SELECT * FROM evento ORDER BY data_ini";
+	    $con = mysqli_query($cx->getBanco(), $consulta);
+	}else{
+		header("Location: login.php");
+	}
+	include_once("sessao.php");    
 ?>
 <!DOCTYPE html>
 <head>
