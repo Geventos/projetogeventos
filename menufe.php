@@ -12,12 +12,12 @@
         <div class="menu-logo">
             <div class="navbar-brand">
                 <span class="navbar-logo">
-                    <a href="index.php">
+                    <a href="homefe.php">
                          <img src="img/calendar.png" alt="Mobirise" style="height: 3.8rem;">
                     </a>
                 </span>
                 <span class="navbar-caption-wrap">
-                    <a class="navbar-caption text-white display-4" href="index.php">
+                    <a class="navbar-caption text-white display-4" href="homefe.php">
                         SisGEv
                     </a>
                 </span>
