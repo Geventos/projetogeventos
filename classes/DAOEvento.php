@@ -1,7 +1,7 @@
 <?php
 require_once("classes/Conexao.php");
 require_once("classes/Evento.php");
-class DALEvento {
+class DAOEvento {
     private $conexao;
     
     function __construct($conexao) {
@@ -50,4 +50,25 @@ class DALEvento {
                 </script>";
         }
     }
+
+    public function ValidarPresenca($idevento, $idinscrito) {
+        $sql = "update inscricao set status = '" . "presente' where id_participante = ";
+        $sql = $sql . $idinscrito . " and id_evento = " . $idevento . ";";
+        $banco = $this->conexao->getBanco();
+        $banco->query($sql);
+        $linhas = mysqli_affected_rows($banco);
+        $this->conexao->Desconectar();        
+        if($linhas == 1){
+            echo "<script type='text/javascript'>
+                    alert('Presença efetuada com sucesso!');
+                    location.href='validarpresenca.php?id_evento=$idevento&idi=$idinscrito;
+                </script>";
+         }else{
+            echo "<script type='text/javascript'>
+                    alert('Presença NÃO efetuada!');
+                    location.href='validarpresenca.php?id_evento=$idevento';
+                </script>";
+        }
+    }
+
 }
