@@ -55,3 +55,9 @@ values('Cristovão Lima', 111111111, 1);
 insert into inscricao(nome_participante, cpf, id_evento)
 values('Alexandre Araujo', 22222222, 1);
 
+insert into inscricao(nome_participante, cpf, id_evento)
+values('Aliete Araujo', 22222222, 1);
+
+insert into inscricao(nome_participante, cpf, id_evento)
+values('Soraya Roberta', 33333222, 1);
+
