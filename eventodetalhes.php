@@ -69,10 +69,8 @@
 							<div class="col-md-2">
 								<input onclick="window.location='editarevento.php?id_evento=<?php echo $codigo?>';" type="button" class="btn btn-primary btn-block" value="Editar Evento">	
 							</div>
-							<div class="col-md-2">
-								<form>
-									<button type="submit" class="btn btn-primary btn-block" title="Excluir Evento."><i class=""></i> Excluir Evento</button>	
-								</form>
+							<div class="col-md-2">	
+								<input onclick="window.location='deletar-evento.php?id_evento=<?php echo $codigo?>';" type="button" class="btn btn-primary btn-block" value="Excluir Evento">
 							</div>
 						</div>
 					</div>
