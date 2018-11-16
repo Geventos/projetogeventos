@@ -31,7 +31,9 @@ $linha = mysqli_fetch_assoc($con);
                         </div>
                         <div class="col-md-3 multi-horizontal">
                             <div class="row row-sm-offset">
-                                <button href="" type="submit" class="btn btn-primary">INSCRIÇÃO</button>
+                            <form action="inscricoes.php">
+                                <button type="submit" class="btn btn-primary">INSCRIÇÃO</button>
+                            </form>
                             </div>
                             <div class="row row-sm-offset">
                                 <button href="" type="submit" class="btn btn-primary">CERTIFICADO</button>
