@@ -50,8 +50,8 @@ values('V SEMANA DE MATEMÁTICA DO CERES/Caicó', '2018-10-24', '2018-10-26');
 
 #Inscrição
 insert into inscricao(nome_participante, cpf, id_evento)
-values('Cristovão Lima', 111111111111, 1);
+values('Cristovão Lima', 111111111, 1);
 
 insert into inscricao(nome_participante, cpf, id_evento)
-values('Alexandre Araujo', 22222222222, 1);
+values('Alexandre Araujo', 22222222, 1);
 
