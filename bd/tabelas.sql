@@ -35,6 +35,7 @@ create table `inscricao`(
    `instituicao` varchar(50),
    `id_evento` int(10) not null,
    `status` varchar(50) default 'inscrito',
+   `datahora` datetime,
 	primary key (`id_participante`)
 );
 
