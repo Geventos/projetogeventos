@@ -62,7 +62,7 @@
 									</form>				
 							</div>
 							<div class="col-md-2">
-								<form>
+								<form action="editarevento.php">
 									<button type="submit" class="btn btn-primary btn-block" title="Editar Informações do Evento."><i class=""></i> Editar Evento</button>		
 									</form>			
 							</div>
