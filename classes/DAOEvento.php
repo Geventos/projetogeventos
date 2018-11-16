@@ -52,16 +52,21 @@ class DAOEvento {
     }
 
     public function ValidarPresenca($idevento, $idinscrito) {
-        $sql = "update inscricao set status = '" . "presente' where id_participante = ";
+        $cx = new Conexao();
+        $consultadia = "select NOW()";
+        $con = mysqli_query($cx->getBanco(), $consultadia);
+        $linha = mysqli_fetch_array($con);
+
+        $sql = "update inscricao set status = 'presente', datahora = '". $linha[0] . "' where id_participante = ";
         $sql = $sql . $idinscrito . " and id_evento = " . $idevento . ";";
         $banco = $this->conexao->getBanco();
         $banco->query($sql);
         $linhas = mysqli_affected_rows($banco);
         $this->conexao->Desconectar();        
-        if($linhas == 1){
+        if($linhas > 0){
             echo "<script type='text/javascript'>
                     alert('Presença efetuada com sucesso!');
-                    location.href='validarpresenca.php?id_evento=$idevento&idi=$idinscrito;
+                    location.href='validarpresenca.php?id_evento=$idevento';
                 </script>";
          }else{
             echo "<script type='text/javascript'>
