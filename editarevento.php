@@ -48,7 +48,7 @@
 									<div class="row">
 										<div class="col-sm-8">
 											<label for="nomeevento">
-												Name:*
+												Nome:*
 											</label>
 											<input type="text" name="nomeevento" class="form-control" id="nomeevento" value="<?php echo $linha['nome']?>">
 										</div>
@@ -56,7 +56,7 @@
 											<label for="datainicio">
 												Data Inicio:*
 											</label>
-											<input type="date" name="pdatainicio" class="form-control" id="datainicio" value="<?php echo date ("Y-m-d", strtotime($linha['data_ini']));?>">
+											<input type="date" name="datainicio" class="form-control" id="datainicio" value="<?php echo date ("Y-m-d", strtotime($linha['data_ini']));?>">
 										</div>
 										<div class="col-sm-2">
 											<label for="datafim">
@@ -116,3 +116,25 @@
 </section>
 </body>
 </html>
+<?php 
+
+
+
+$editar = $pdo->prepare("update evento set nome = ?, data_ini = ?, data_fim = ?, sobre = ?, programacao = ?, contatos = ? where id_evento = $codigo");
+$editar->execute(array("nomeevento", "datainicio", "datafim", "sobreevento", "programacao", "contatos"));
+
+if($editar){
+	echo "<script type='text/javascript'>
+                            alert('Evento Atualizado com Sucesso!');
+                            location.href='adm-eventos.php';
+                        </script>";
+} else{
+
+	echo "<script type='text/javascript'>
+                            alert('Erro ao Atualizar Evento!');
+                            location.href='adm-eventos.php';
+                        </script>";
+}
+
+
+?>
