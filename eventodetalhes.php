@@ -57,7 +57,7 @@
 								</form>			
 							</div>
 							<div class="col-md-2">
-								<form>
+								<form action="permissoes.php">
 									<button type="submit" class="btn btn-primary btn-block" title="Gerenciar Permissões."><i class=""></i> Permissões</button>	
 									</form>				
 							</div>
