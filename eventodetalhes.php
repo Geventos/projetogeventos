@@ -62,6 +62,11 @@
 									</form>				
 							</div>
 							<div class="col-md-2">
+								<form>
+									<button type="submit" class="btn btn-primary btn-block" title="Gerenciar Permissões."><i class=""></i> Presenças</button>	
+									</form>				
+							</div>
+							<div class="col-md-2">
 								<form action="editarevento.php">
 									<button type="submit" class="btn btn-primary btn-block" title="Editar Informações do Evento."><i class=""></i> Editar Evento</button>		
 									</form>			
