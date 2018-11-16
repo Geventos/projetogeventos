@@ -11,3 +11,9 @@ select * from inscrito where nome_participante like '%t%';
 select * from evento;
 
 select * from usuario;
+
+select * from inscricao;
+
+update inscricao set status = 'presente' where id_participante = 1 and id_evento = 1;
+
+
