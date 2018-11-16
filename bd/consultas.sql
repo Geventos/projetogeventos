@@ -14,6 +14,6 @@ select * from usuario;
 
 select * from inscricao;
 
-update inscricao set status = 'presente' where id_participante = 1 and id_evento = 1;
+select * from inscricao where status = 'presente' and id_evento = 1 order by time(datahora) DESC;
 
-
+select now()
