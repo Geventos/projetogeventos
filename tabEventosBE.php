@@ -5,9 +5,8 @@
 				<th>Nome</th>
 				<th>Data Inicio</th>
 				<th>Data Fim</th>
-				<th>Ver Detalhes</th>
-				<th>Editar</th>
-				<th>Excluir</th>
+				<th>Administrar</th>
+				
 			</tr>
 		</thead>
 		<tbody>
@@ -18,8 +17,6 @@
 			<td align="center"><?php echo date ("d/m/Y", strtotime($linhas['data_ini']));?></td>
 			<td align="center"><?php echo date ("d/m/Y", strtotime($linhas['data_fim']));?></td>
 			<td  align="center">  <a class="fa fa-search" href="eventodetalhes.php?id_evento=<?php echo $linhas[0];?>"></a> </td>
-			<td align="center"><a class="fa fa-edit" href="editarevento.php?id_evento=<?php echo $linhas[0];?>"></a></td>
-			<td class="body-item mbr-fonts-style display-7" align="center"><a class="fa fa-trash-o" href="deletar-evento.php?id_evento=<?php echo $linhas[0];?>"></a></td>
 		</tr>
 		<?php } ?> 
 	</tbody>

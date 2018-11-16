@@ -40,67 +40,100 @@
 				<div class="progressbar-heading grids-heading">
 					<h2>Evento | <?php echo $linha['nome']?></h2>
 				</div>
-				<div class="panel panel-widget forms-panel">
-					<div class="forms">
-						<div class="inline-form widget-shadow">
-							<div class="form-body">
-								<form action="#" method="post">
-									<div class="row">
-										<div class="col-sm-8">
-											<label for="nomeevento">
-												Name:*
-											</label>
-											<input type="text" name="nomeevento" class="form-control" id="nomeevento" value="<?php echo $linha['nome']?>" disabled>
-										</div>
-										<div class="col-sm-2">
-											<label for="datainicio">
-												Data Inicio:*
-											</label>
-											<input type="text" name="pdatainicio" class="form-control" id="datainicio" value="<?php echo date ("d/m/Y", strtotime($linha['data_ini']));?>" disabled>
-										</div>
-										<div class="col-sm-2">
-											<label for="datafim">
-												Data fim:
-											</label>
-											<input type="test" name="datafim" class="form-control" id="datafim" value="<?php echo date ("d/m/Y", strtotime($linha['data_fim']));?>" disabled>
-										</div>
-									</div>
-									<div class="row">
-										<div class="col-sm-8">
-											<label for="sobreevento">
-												Sobre o Evento:
-											</label>
-											<textarea class="form-control" id="sobreevento" disabled><?php echo $linha['sobre'];?></textarea>
-										</div>
-										<div class="col-sm-4">
-											<label for="contatos">
-												Contatos:
-											</label>
-											<textarea class="form-control" id="contatos" disabled><?php echo $linha['contatos'];?></textarea>
-										</div>
-									</div>
-									<div class="row">
-										<div class="col-sm-12">
-											<label for="programacao">
-												Programação:
-											</label>
-											<textarea class="form-control" id="programacao" disabled><?php echo $linha['programacao'];?></textarea>
-										</div>
-									</div>
-									<hr>
-									<div class="row">
-										<div class="col-sm-12">
-											<div class="col-xs-2">
-												<button type="submit" class="btn btn-primary btn-block">ALTERAR</button>
-											</div>
-											<div class="col-xs-2">
-												<button type="submit" class="btn btn-primary btn-block">CANCELAR</button>
-											</div>
-										</div>
-									</div>
-									</hr>
+				
+			</div>
+			<div class="panel panel-widget forms-panel">
+				<div class="form-title">
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="col-md-2">
+								<form action="adm-eventos.php">
+									<button type="submit" class="btn btn-primary btn-block" title="Voltar para home."><i class=""></i> Home</button>			
+								</form>	
+							</div>
+							<div class="col-md-2">
+								<form action="">
+									<button accesskey= type="submit" class="btn btn-primary btn-block" title="Gerar Crachá do Evento."><i class=""></i> Gerar Crachá</button>		
+								</form>			
+							</div>
+							<div class="col-md-2">
+								<form>
+									<button type="submit" class="btn btn-primary btn-block" title="Gerenciar Permissões."><i class=""></i> Permissões</button>	
+									</form>				
+							</div>
+							<div class="col-md-2">
+								<form>
+									<button type="submit" class="btn btn-primary btn-block" title="Editar Informações do Evento."><i class=""></i> Editar Evento</button>		
+									</form>			
+							</div>
+							<div class="col-md-2">
+								<form>
+									<button type="submit" class="btn btn-primary btn-block" title="Excluir Evento."><i class=""></i> Excluir Evento</button>	
 								</form>
 							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="forms">
+					<div class="inline-form widget-shadow">
+						<div class="form-body">
+							<form action="#" method="post">
+								<div class="row">
+									<div class="col-sm-8">
+										<label for="nomeevento">
+											Name:*
+										</label>
+										<input type="text" name="nomeevento" class="form-control" id="nomeevento" value="<?php echo $linha['nome']?>" disabled>
+									</div>
+									<div class="col-sm-2">
+										<label for="datainicio">
+											Data Inicio:*
+										</label>
+										<input type="text" name="pdatainicio" class="form-control" id="datainicio" value="<?php echo date ("d/m/Y", strtotime($linha['data_ini']));?>" disabled>
+									</div>
+									<div class="col-sm-2">
+										<label for="datafim">
+											Data fim:
+										</label>
+										<input type="test" name="datafim" class="form-control" id="datafim" value="<?php echo date ("d/m/Y", strtotime($linha['data_fim']));?>" disabled>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-sm-8">
+										<label for="sobreevento">
+											Sobre o Evento:
+										</label>
+										<textarea class="form-control" id="sobreevento" disabled><?php echo $linha['sobre'];?></textarea>
+									</div>
+									<div class="col-sm-4">
+										<label for="contatos">
+											Contatos:
+										</label>
+										<textarea class="form-control" id="contatos" disabled><?php echo $linha['contatos'];?></textarea>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-sm-12">
+										<label for="programacao">
+											Programação:
+										</label>
+										<textarea class="form-control" id="programacao" disabled><?php echo $linha['programacao'];?></textarea>
+									</div>
+								</div>
+								<hr>
+								<div class="row">
+									<div class="col-sm-12">
+										<div class="col-xs-2">
+											<button type="submit" class="btn btn-primary btn-block">ALTERAR</button>
+										</div>
+										<div class="col-xs-2">
+											<button type="submit" class="btn btn-primary btn-block">CANCELAR</button>
+										</div>
+									</div>
+								</div>
+								</hr>
+							</form>
 						</div>
 					</div>
 				</div>
