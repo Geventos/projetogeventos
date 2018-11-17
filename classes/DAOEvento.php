@@ -76,4 +76,23 @@ class DAOEvento {
         }
     }
 
+    public function Atualizar($nome, $data_ini, $data_fim, $sobre, $programacao, $contatos, $id_evento) {
+        $sql = "update 'evento' set nome ='$nome', data_ini='$data_ini', data_fim='$data_fim', sobre= '$sobre', programacao='$programacao', contatos='$contatos' where id_evento= $id_evento";
+        $banco = $this->conexao->getBanco();
+        $banco->query($sql);
+        $linhas = mysqli_affected_rows($banco);
+        $this->conexao->Desconectar();        
+        if($linhas == 1){
+            echo "<script type='text/javascript'>
+                    alert('Remoção efetuada com sucesso!');
+                    location.href='adm-eventos.php';
+                </script>";
+         }else{
+            echo "<script type='text/javascript'>
+                    alert('Remoção NÃO efetuada!');
+                    location.href='adm-eventos.php';
+                </script>";
+        }
+    }
+
 }

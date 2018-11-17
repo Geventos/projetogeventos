@@ -56,7 +56,7 @@
 											<label for="datainicio">
 												Data Inicio:*
 											</label>
-											<input type="date" name="pdatainicio" class="form-control" id="datainicio" value="<?php echo date ("Y-m-d", strtotime($linha['data_ini']));?>">
+											<input type="date" name="datainicio" class="form-control" id="datainicio" value="<?php echo date ("Y-m-d", strtotime($linha['data_ini']));?>">
 										</div>
 										<div class="col-sm-2">
 											<label for="datafim">
@@ -70,13 +70,13 @@
 											<label for="sobreevento">
 												Sobre o Evento:
 											</label>
-											<textarea class="form-control" id="sobreevento"><?php echo $linha['sobre'];?></textarea>
+											<textarea class="form-control" name="sobre" id="sobreevento"><?php echo $linha['sobre'];?></textarea>
 										</div>
 										<div class="col-sm-4">
 											<label for="contatos">
 												Contatos:
 											</label>
-											<textarea class="form-control" id="contatos"><?php echo $linha['contatos'];?></textarea>
+											<textarea class="form-control" name="contatos" id="contatos"><?php echo $linha['contatos'];?></textarea>
 										</div>
 									</div>
 									<div class="row">
@@ -84,7 +84,7 @@
 											<label for="programacao">
 												Programação:
 											</label>
-											<textarea class="form-control" id="programacao"><?php echo $linha['programacao'];?></textarea>
+											<textarea class="form-control" name="programacao" id="programacao"><?php echo $linha['programacao'];?></textarea>
 										</div>
 									</div>
 									<hr>
@@ -116,3 +116,14 @@
 </section>
 </body>
 </html>
+<?php
+if($_POST){
+            $nome = $_POST['nomeevento'];
+            $data_ini = $_POST['datainicio'];
+            $datafim = $_POST['datafim'];
+            $sobre = $_POST['sobre'];
+            $programacao = $_POST['programacao'];
+            $contatos = $_POST['contatos'];
+                $sqlUpdate = Atualizar($nome, $data_ini, $data_fim, $sobre, $programacao, $contatos);
+}
+?>
