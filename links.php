@@ -1,3 +1,4 @@
+<meta charset="UTF-8">
 <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
 <!-- bootstrap-css -->
 <link rel="stylesheet" href="css/bootstrap.css">
