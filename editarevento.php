@@ -4,8 +4,8 @@
 		require_once("classes/Conexao.php");
 		require_once("classes/DAOEvento.php");
 		$cx = new Conexao();
-		$codigo  = $_GET['id_evento'];
-		$consulta = "SELECT * FROM evento WHERE id_evento = $codigo limit 1";
+		$id_evento  = $_GET['id_evento'];
+		$consulta = "SELECT * FROM evento WHERE id_evento = $id_evento limit 1";
 		$con = mysqli_query($cx->getBanco(), $consulta);
 		$linha = mysqli_fetch_assoc($con);
 	}else{
@@ -67,10 +67,10 @@
 									</div>
 									<div class="row">
 										<div class="col-sm-8">
-											<label for="sobreevento">
+											<label for="sobre">
 												Sobre o Evento:
 											</label>
-											<textarea class="form-control" name="sobre" id="sobreevento"><?php echo $linha['sobre'];?></textarea>
+											<textarea class="form-control" name="sobre" id="sobre"><?php echo $linha['sobre'];?></textarea>
 										</div>
 										<div class="col-sm-4">
 											<label for="contatos">
@@ -117,16 +117,13 @@
 </body>
 </html>
 <?php
-
-if($_POST){
+	if($_POST){
 		require_once("classes/Evento.php");
-    	require_once("classes/Conexao.php");
-    	require_once("classes/DAOEvento.php");
-    	$atualizar = new Evento($_POST['nomeevento'], $_POST['datainicio'], $_POST['datafim'], $_POST['sobre'], $_POST['programacao'], $_POST['contatos']);
-    	$cx = new Conexao();
-        $dao = new DAOEvento($cx);
-        $dao->Atualizar($atualizar); 
-
-           
-}
+	    require_once("classes/Conexao.php");
+	    require_once("classes/DAOEvento.php");
+	    $evento = new Evento($_POST['nomeevento'], $_POST['sobre'], $_POST['datainicio'], $_POST['datafim'], $_POST['programacao'], $_POST['contatos']);
+	    $cx = new Conexao();
+	    $dao = new DAOEvento($cx);
+	    $dao->Atualizar($evento, $id_evento); 	           
+	}
 ?>
