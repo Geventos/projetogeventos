@@ -91,7 +91,7 @@
 										<label for="datainicio">
 											Data Inicio:*
 										</label>
-										<input type="text" name="pdatainicio" class="form-control" id="datainicio" value="<?php echo date ("d/m/Y", strtotime($linha['data_ini']));?>" disabled>
+										<input type="text" name="datainicio" class="form-control" id="datainicio" value="<?php echo date ("d/m/Y", strtotime($linha['data_ini']));?>" disabled>
 									</div>
 									<div class="col-sm-2">
 										<label for="datafim">
@@ -105,13 +105,13 @@
 										<label for="sobreevento">
 											Sobre o Evento:
 										</label>
-										<textarea class="form-control" id="sobreevento" disabled><?php echo $linha['sobre'];?></textarea>
+										<textarea class="form-control" name = "sobre" id="sobreevento" disabled><?php echo $linha['sobre'];?></textarea>
 									</div>
 									<div class="col-sm-4">
 										<label for="contatos">
 											Contatos:
 										</label>
-										<textarea class="form-control" id="contatos" disabled><?php echo $linha['contatos'];?></textarea>
+										<textarea class="form-control" name="contatos" id="contatos" disabled><?php echo $linha['contatos'];?></textarea>
 									</div>
 								</div>
 								<div class="row">
@@ -119,21 +119,9 @@
 										<label for="programacao">
 											Programação:
 										</label>
-										<textarea class="form-control" id="programacao" disabled><?php echo $linha['programacao'];?></textarea>
+										<textarea class="form-control" id="programacao" name="programacao" disabled><?php echo $linha['programacao'];?></textarea>
 									</div>
 								</div>
-								<hr>
-								<div class="row">
-									<div class="col-sm-12">
-										<div class="col-xs-2">
-											<button type="submit" class="btn btn-primary btn-block">ALTERAR</button>
-										</div>
-										<div class="col-xs-2">
-											<button type="submit" class="btn btn-primary btn-block">CANCELAR</button>
-										</div>
-									</div>
-								</div>
-								</hr>
 							</form>
 						</div>
 					</div>
