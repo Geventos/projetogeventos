@@ -117,13 +117,16 @@
 </body>
 </html>
 <?php
+
 if($_POST){
-            $nome = $_POST['nomeevento'];
-            $data_ini = $_POST['datainicio'];
-            $datafim = $_POST['datafim'];
-            $sobre = $_POST['sobre'];
-            $programacao = $_POST['programacao'];
-            $contatos = $_POST['contatos'];
-                $sqlUpdate = Atualizar($nome, $data_ini, $data_fim, $sobre, $programacao, $contatos);
+		require_once("classes/Evento.php");
+    	require_once("classes/Conexao.php");
+    	require_once("classes/DAOEvento.php");
+    	$atualizar = new Evento($_POST['nomeevento'], $_POST['datainicio'], $_POST['datafim'], $_POST['sobre'], $_POST['programacao'], $_POST['contatos']);
+    	$cx = new Conexao();
+        $dao = new DAOEvento($cx);
+        $dao->Atualizar($atualizar); 
+
+           
 }
 ?>
