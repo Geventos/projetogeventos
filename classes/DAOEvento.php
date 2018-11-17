@@ -76,8 +76,9 @@ class DAOEvento {
         }
     }
 
-    public function Atualizar($nome, $data_ini, $data_fim, $sobre, $programacao, $contatos, $id_evento) {
-        $sql = "update 'evento' set nome ='$nome', data_ini='$data_ini', data_fim='$data_fim', sobre= '$sobre', programacao='$programacao', contatos='$contatos' where id_evento= $id_evento";
+    public function Atualizar($id_evento) {
+        $codigo  = $_GET['id_evento'];
+        $sql = "update evento set nome ='" . $nome . "', data_ini='" .  $data_ini . "', data_fim='".$data_fim. "', sobre= '".$sobre."', programacao='".$programacao."', contatos='".$contatos."' where id_evento='$codigo'";
         $banco = $this->conexao->getBanco();
         $banco->query($sql);
         $linhas = mysqli_affected_rows($banco);
