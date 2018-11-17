@@ -4,9 +4,9 @@ use sisgev;
 
 CREATE TABLE `usuario` (
   `id_usuario` int(10) auto_increment,
-  `nome_completo` varchar(50) not null,
+  `nome_completo` varchar(100) not null,
   `senha` varchar(20) not null,
-  `email` varchar(25) not null,
+  `email` varchar(50) not null,
   `permissao` int(10) default 0,
   primary key (`id_usuario`)
 ) ;
