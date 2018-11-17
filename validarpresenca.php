@@ -75,6 +75,8 @@
 											<!-- Fim -->
 										</div>
 										<div class="col-md-6">
+											<h3 style="text-align: center;">Ultimos Validados</h3>
+											<br>
 											<?php require_once("tabelavalidacao.php"); ?>
 										</div>
 									</div>
