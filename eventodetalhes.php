@@ -47,9 +47,7 @@
 					<div class="row">
 						<div class="col-sm-12">
 							<div class="col-md-2">
-								<form action="adm-eventos.php">
-									<button type="submit" class="btn btn-primary btn-block" title="Voltar para home."><i class=""></i> Home</button>			
-								</form>	
+								<input onclick="window.location='adm-eventos.php';" type="button" class="btn btn-primary btn-block" value="Home">
 							</div>
 							<div class="col-md-2">
 								<form action="">
