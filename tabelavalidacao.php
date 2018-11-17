@@ -3,8 +3,8 @@
 		<thead>
 			<tr>
 				<th>Nome</th>
-				<th>Status</th>
-				<th>Data / Hora</th>				
+				<th width="10px">Status</th>
+				<th width="20px">Hora</th>				
 			</tr>
 		</thead>
 		<tbody>
@@ -12,8 +12,7 @@
 			<?php while ($linhas = mysqli_fetch_array($conv)){?>			
 			<td ><?php echo $linhas["nome_participante"]; ?></td>
 			<td ><?php echo $linhas["status"]; ?></td>
-			<td align="center"><?php echo date ("d/m/y - h:m:s", strtotime($linhas['datahora']));?></td>
-			</a> </td>
+			<td align="center"><?php echo date ("h:i:s", strtotime($linhas['datahora']));?></td>
 		</tr>
 		<?php } ?> 
 	</tbody>
