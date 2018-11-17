@@ -76,22 +76,21 @@ class DAOEvento {
         }
     }
 
-    public function Atualizar($id_evento) {
-        $codigo  = $_GET['id_evento'];
-        $sql = "update evento set nome ='" . $nome . "', data_ini='" .  $data_ini . "', data_fim='".$data_fim. "', sobre= '".$sobre."', programacao='".$programacao."', contatos='".$contatos."' where id_evento='$codigo'";
+    public function Atualizar($evento, $id_evento) {
+        $sql = "update evento set nome ='" . $evento->getNome() . "', data_ini='" .  $evento->getDatainicio() . "', data_fim='" . $evento->getDatafim() . "', sobre= '" . $evento->getSobre() . "', programacao='" . $evento->getProgramacao() . "', contatos='" . $evento->getContatos() . "' where id_evento='" . $id_evento . "';";
         $banco = $this->conexao->getBanco();
         $banco->query($sql);
         $linhas = mysqli_affected_rows($banco);
         $this->conexao->Desconectar();        
         if($linhas == 1){
             echo "<script type='text/javascript'>
-                    alert('Remoção efetuada com sucesso!');
-                    location.href='adm-eventos.php';
+                    alert('Atualização efetuada com sucesso!');
+                    location.href='eventodetalhes.php?id_evento=$id_evento';
                 </script>";
          }else{
             echo "<script type='text/javascript'>
-                    alert('Remoção NÃO efetuada!');
-                    location.href='adm-eventos.php';
+                    alert('Atualização NÃO efetuada!');
+                    location.href='eventodetalhes.php?id_evento=$id_evento';
                 </script>";
         }
     }
