@@ -60,9 +60,7 @@
 									</form>				
 							</div>
 							<div class="col-md-2">
-								<form>
-									<button type="submit" class="btn btn-primary btn-block" title="Gerenciar Permissões."><i class=""></i> Presenças</button>	
-									</form>				
+								<input onclick="window.location='validarpresenca.php?id_evento=<?php echo $codigo?>';" type="button" class="btn btn-primary btn-block" value="Validar Presença">			
 							</div>
 							<div class="col-md-2">
 								<input onclick="window.location='editarevento.php?id_evento=<?php echo $codigo?>';" type="button" class="btn btn-primary btn-block" value="Editar Evento">	
