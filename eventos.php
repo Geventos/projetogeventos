@@ -1,9 +1,6 @@
 <?php        
-require_once("classes/Conexao.php");
-require_once("classes/DAOEvento.php");
-$cx = new Conexao();
-$consulta ="SELECT * FROM evento ORDER BY data_ini";
-$con = mysqli_query($cx->getBanco(), $consulta);    
+  require_once("classes/DAOEvento.php");      
+  $con = (new DAOEvento())->Listar();   
 ?>
 <!DOCTYPE html>
 <html >

@@ -1,11 +1,8 @@
 <?php  
-require_once("classes/Conexao.php");
-require_once("classes/DAOEvento.php");
-$cx = new Conexao();
-$codigo  = $_GET['id_evento'];
-$consulta = "SELECT * FROM evento WHERE id_evento = $codigo limit 1";
-$con = mysqli_query($cx->getBanco(), $consulta);
-$linha = mysqli_fetch_assoc($con);
+    require_once("classes/DAOEvento.php");
+    require_once("classes/Evento.php");
+    $id_evento = $_GET['id_evento'];
+    $linha = (new DAOEvento())->Exibir($id_evento);
 ?>
 
 <!DOCTYPE html>
