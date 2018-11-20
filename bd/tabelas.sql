@@ -9,13 +9,13 @@ CREATE TABLE `usuario` (
   `email` varchar(50) not null,
   `permissao` int(10) default 0,
   primary key (`id_usuario`)
-) ;
+)CHARACTER SET utf8 COLLATE utf8_general_ci;
 
 CREATE TABLE `permissao`(
   `id_evento` int(10)  not null,
   `id_usuario` int(10) not null,
   `tipo_permissao` int(10) not null
-);
+)CHARACTER SET utf8 COLLATE utf8_general_ci;
 
 CREATE TABLE `evento`(
   `id_evento` int(10) auto_increment,
@@ -26,7 +26,7 @@ CREATE TABLE `evento`(
   `programacao` text,
   `contatos` varchar(100),
   primary key (`id_evento`)
-);
+)CHARACTER SET utf8 COLLATE utf8_general_ci;
 
 create table `inscricao`(
    `id_participante` int(10) auto_increment,
@@ -37,6 +37,6 @@ create table `inscricao`(
    `status` varchar(50) default 'inscrito',
    `datahora` datetime,
 	primary key (`id_participante`)
-);
+)CHARACTER SET utf8 COLLATE utf8_general_ci;
 
 
