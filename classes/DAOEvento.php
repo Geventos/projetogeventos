@@ -23,10 +23,12 @@ class DAOEvento {
         if($linhas == 1){
             echo "<script type='text/javascript'>
                     alert('Cadastro efetuado com sucesso!');
+                    location.href='adm-eventos.php';
                 </script>";
          }else{
             echo "<script type='text/javascript'>
                     alert('Cadastro NÃO efetuado!');
+                    location.href='adm-eventos.php';
                 </script>";
         }
     }
@@ -95,10 +97,17 @@ class DAOEvento {
         }
     }
 
-    public function ListarEventos(){
+    public function Listar(){
         $consulta ="SELECT * FROM evento ORDER BY data_ini";
         $con = mysqli_query($this->conexao->getBanco(), $consulta);
         return $con;
+    }
+
+    public function Exibir($idevento){
+        $consulta = "SELECT * FROM evento WHERE id_evento = $idevento limit 1";
+        $con = mysqli_query($this->conexao->getBanco(), $consulta);
+        $linha = mysqli_fetch_assoc($con);
+        return $linha;
     }
 
 }
