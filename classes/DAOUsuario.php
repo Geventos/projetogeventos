@@ -4,8 +4,8 @@ require_once("classes/Usuario.php");
 class DAOUsuario {
     private $conexao;
     
-    function __construct($conexao) {
-        $this->conexao = $conexao;
+    function __construct() {
+        $this->conexao = new Conexao();
     }
     
     public function Criar($usuario) {
