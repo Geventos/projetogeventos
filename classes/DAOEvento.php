@@ -4,8 +4,8 @@ require_once("classes/Evento.php");
 class DAOEvento {
     private $conexao;
     
-    function __construct($conexao) {
-        $this->conexao = $conexao;
+    function __construct() {
+        $this->conexao = new Conexao();
     }
     
     public function Criar($evento) {
@@ -93,6 +93,12 @@ class DAOEvento {
                     location.href='eventodetalhes.php?id_evento=$id_evento';
                 </script>";
         }
+    }
+
+    public function ListarEventos(){
+        $consulta ="SELECT * FROM evento ORDER BY data_ini";
+        $con = mysqli_query($this->conexao->getBanco(), $consulta);
+        return $con;
     }
 
 }
