@@ -1,13 +1,10 @@
 <?php
 	session_start();
 	if(!empty($_SESSION['id_usuario'])){  
-		require_once("classes/Conexao.php");
 		require_once("classes/DAOEvento.php");
-		$cx = new Conexao();
-		$id_evento  = $_GET['id_evento'];
-		$consulta = "SELECT * FROM evento WHERE id_evento = $id_evento limit 1";
-		$con = mysqli_query($cx->getBanco(), $consulta);
-		$linha = mysqli_fetch_assoc($con);
+		require_once("classes/Evento.php");
+		$id_evento = $_GET['id_evento'];
+		$linha = (new DAOEvento())->Exibir($id_evento);
 	}else{
 	header("Location: login.php");
 	}
@@ -118,12 +115,7 @@
 </html>
 <?php
 	if($_POST){
-		require_once("classes/Evento.php");
-	    require_once("classes/Conexao.php");
-	    require_once("classes/DAOEvento.php");
-	    $evento = new Evento($_POST['nomeevento'], $_POST['sobre'], $_POST['datainicio'], $_POST['datafim'], $_POST['programacao'], $_POST['contatos']);
-	    $cx = new Conexao();
-	    $dao = new DAOEvento($cx);
-	    $dao->Atualizar($evento, $id_evento); 	           
+	    $evento = new Evento($_POST['nomeevento'], $_POST['sobre'], $_POST['datainicio'], $_POST['datafim'], $_POST['programacao'], $_POST['contatos']);	    
+	    $dao = (new DAOEvento())->Atualizar($evento, $id_evento); 	           
 	}
 ?>

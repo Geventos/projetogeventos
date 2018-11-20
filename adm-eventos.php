@@ -2,7 +2,7 @@
  	session_start();
 	if(!empty($_SESSION['id_usuario'])){
 	    require_once("classes/DAOEvento.php");	    
-	    $con = (new DAOEvento())->ListarEventos();
+	    $con = (new DAOEvento())->Listar();
 	}else{
 		header("Location: login.php");
 	}

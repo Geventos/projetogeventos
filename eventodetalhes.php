@@ -1,13 +1,10 @@
 <?php
 	session_start();
 	if(!empty($_SESSION['id_usuario'])){
-		require_once("classes/Conexao.php");
 		require_once("classes/DAOEvento.php");
-		$cx = new Conexao();
-		$codigo  = $_GET['id_evento'];
-		$consulta = "SELECT * FROM evento WHERE id_evento = $codigo limit 1";
-		$con = mysqli_query($cx->getBanco(), $consulta);
-		$linha = mysqli_fetch_assoc($con);
+		require_once("classes/Evento.php");
+		$id_evento = $_GET['id_evento'];
+		$linha = (new DAOEvento())->Exibir($id_evento);
 	}else{
 		header("Location: login.php");
 	}
@@ -60,13 +57,13 @@
 									</form>				
 							</div>
 							<div class="col-md-2">
-								<input onclick="window.location='validarpresenca.php?id_evento=<?php echo $codigo?>';" type="button" class="btn btn-primary btn-block" value="Validar Presença">			
+								<input onclick="window.location='validarpresenca.php?id_evento=<?php echo $id_evento?>';" type="button" class="btn btn-primary btn-block" value="Validar Presença">			
 							</div>
 							<div class="col-md-2">
-								<input onclick="window.location='editarevento.php?id_evento=<?php echo $codigo?>';" type="button" class="btn btn-primary btn-block" value="Editar Evento">	
+								<input onclick="window.location='editarevento.php?id_evento=<?php echo $id_evento?>';" type="button" class="btn btn-primary btn-block" value="Editar Evento">	
 							</div>
 							<div class="col-md-2">	
-								<input onclick="window.location='deletar-evento.php?id_evento=<?php echo $codigo?>';" type="button" class="btn btn-primary btn-block" value="Excluir Evento">
+								<input onclick="window.location='deletar-evento.php?id_evento=<?php echo $id_evento?>';" type="button" class="btn btn-primary btn-block" value="Excluir Evento">
 							</div>
 						</div>
 					</div>
