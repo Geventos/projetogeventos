@@ -30,7 +30,6 @@ class DAOEvento {
                     location.href='adm-eventos.php';
                 </script>";
         }
-        mysqli_close($this->conexao);
     }
 
     public function Deletar($idevento) {
@@ -50,7 +49,6 @@ class DAOEvento {
                     location.href='adm-eventos.php';
                 </script>";
         }
-        mysqli_close($this->conexao);
     }
 
     public function ValidarPresenca($idevento, $idinscrito) {
@@ -74,7 +72,6 @@ class DAOEvento {
                     location.href='validarpresenca.php?id_evento=$idevento';
                 </script>";
         }
-        mysqli_close($this->conexao);
     }
 
     public function Atualizar($evento, $id_evento) {
@@ -93,7 +90,6 @@ class DAOEvento {
                     location.href='eventodetalhes.php?id_evento=$id_evento';
                 </script>";
         }
-        mysqli_close($this->conexao);
     }
 
     public function Listar(){
@@ -108,7 +104,6 @@ class DAOEvento {
         $con = mysqli_query($this->conexao->getBanco(), $consulta);
         $linha = mysqli_fetch_assoc($con);
         return $linha;
-        mysqli_close($this->conexao);
     }
 
 }
