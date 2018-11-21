@@ -1,11 +1,11 @@
 <?php
-require_once("classes/Conexao.php");
+require_once("classes/Conn.php");
 require_once("classes/Evento.php");
 class DAOEvento {
     private $conexao;
     
     function __construct() {
-        $this->conexao = new Conexao();
+        $this->conexao = Conn::getInstance();
     }
     
     public function Criar($evento) {
@@ -54,9 +54,8 @@ class DAOEvento {
     }
 
     public function ValidarPresenca($idevento, $idinscrito) {
-        $cx = new Conexao();
         $consultadia = "select NOW()";
-        $con = mysqli_query($cx->getBanco(), $consultadia);
+        $con = mysqli_query($this->conexao->getBanco(), $consultadia);
         $linha = mysqli_fetch_array($con);
 
         $sql = "update inscricao set status = 'presente', datahora = '". $linha[0] . "' where id_participante = ";
