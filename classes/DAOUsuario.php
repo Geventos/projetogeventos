@@ -42,4 +42,18 @@ class DAOUsuario {
              return FALSE;
         }
     }
+
+     public function ListarInscrito(){
+        $consulta ="SELECT * FROM inscricao";
+        $con = mysqli_query($this->conexao->getBanco(), $consulta);
+        return $con;
+        mysqli_close($this->conexao);
+    }
+
+     public function gerarCracha(){
+        include('phpqrcode/qrlib.php');
+        $id_inscrito = $_GET['id_participante'];
+        QRcode::png($id_inscrito, "QR_code.png", QR_ECLEVEL_L , 5.5);
+    }
+
 }
