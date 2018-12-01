@@ -1,9 +1,13 @@
-<!--A Design by W3layouts
-Author: W3layout
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
--->
+<?php
+ 	session_start();
+	if(!empty($_SESSION['id_usuario'])){
+	    require_once("classes/DAOUsuario.php");	    
+	    $con = (new DAOUsuario())->ListarInscrito();
+	}else{
+		header("Location: login.php");
+	}
+	include_once("sessao.php");    
+?>
 <!DOCTYPE html>
 <head>
 	<title>SisGEv | Gerar Crachá</title>
@@ -47,21 +51,17 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 							<thead>
 								<tr>
 									<th>Nome</th>
-									<th>Evento</th>
 									<th>Gerar</th>
 								</tr>
 							</thead>
 							<tbody>
 								<tr>
-									<td align="center">Jane Doe</td>
-									<td align="center">SIC - Semana de Informática</td>
-									<td align="center"><a href="#" title="Gerar Crachá"><i  class="fa fa-plus-square"></i></a></td>
+
+									<?php while ($linhas = mysqli_fetch_array($con)){?>
+									<td align="center"><?php echo $linhas["nome_participante"]; ?></td>
+									<td align="center"><a class="fa fa-plus-square" href="imprimirCracha.php?id_participante=<?php echo $linhas[0];?>" title="Gerar Crachá"></a></td>
 								</tr>
-								<tr>
-									<td align="center">John Doe</td>
-									<td align="center">SIC - Semana de Informática</td>
-									<td align="center"><a href="#" title="Gerar Crachá"><i  class="fa fa-plus-square"></i></a></td>
-								</tr>
+								<?php } ?>
 							</tbody>
 						</table>
 						<hr>
