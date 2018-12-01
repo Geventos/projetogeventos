@@ -47,8 +47,8 @@
 								<input onclick="window.location='adm-eventos.php';" type="button" class="btn btn-primary btn-block" value="Home">
 							</div>
 							<div class="col-md-2">
-								<form action="">
-									<button accesskey= type="submit" class="btn btn-primary btn-block" title="Gerar Crachá do Evento."><i class=""></i> Gerar Crachá</button>		
+								<form action="">		
+									<input onclick="window.location='gerarcracha.php';" type="button" class="btn btn-primary btn-block" value="Gerar Crachá">
 								</form>			
 							</div>
 							<div class="col-md-2">
