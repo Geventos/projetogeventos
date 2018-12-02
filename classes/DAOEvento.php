@@ -81,7 +81,7 @@ class DAOEvento {
         $linhas = mysqli_affected_rows($banco);        
         if($linhas == 1){
             echo "<script type='text/javascript'>
-                    alert('Atualização efetuada com sucesso!');
+                    alert('Atualização Efetuada com Sucesso!');
                     location.href='eventodetalhes.php?id_evento=$id_evento';
                 </script>";
          }else{
