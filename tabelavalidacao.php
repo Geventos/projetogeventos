@@ -3,7 +3,7 @@
 		<thead>
 			<tr>
 				<th>Nome</th>
-				<th width="10px">Status</th>
+				<th width="20px">Status</th>
 				<th width="20px">Hora</th>				
 			</tr>
 		</thead>
