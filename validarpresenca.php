@@ -2,7 +2,6 @@
 	session_start();
 	if(!empty($_SESSION['id_usuario'])){
 		require_once("classes/Conn.php");
-		require_once("classes/DAOEvento.php");
 		$cx = Conn::getInstance();
 		$cxv = Conn::getInstance();
 		$codigo  = $_GET['id_evento'];
