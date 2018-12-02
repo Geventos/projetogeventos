@@ -1,10 +1,10 @@
 <?php
 	session_start();
 	if(!empty($_SESSION['id_usuario'])){
-		require_once("classes/Conexao.php");
+		require_once("classes/Conn.php");
 		require_once("classes/DAOEvento.php");
-		$cx = new Conexao();
-		$cxv = new Conexao();
+		$cx = Conn::getInstance();
+		$cxv = Conn::getInstance();
 		$codigo  = $_GET['id_evento'];
 		$consulta = "SELECT * FROM evento WHERE id_evento = $codigo limit 1";
 		$consultavalidacao ="select * from inscricao where status = 'presente' and id_evento = $codigo order by time(datahora) desc limit 10;";
@@ -18,7 +18,7 @@
 ?>
 <!DOCTYPE html>
 <head>
-	<title>SisGEv | Evento - <?php echo $linha['nome']?></title>
+	<title>SisGEv | Validar Presença - <?php echo $linha['nome']?></title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="keywords" content="Colored Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
@@ -41,7 +41,7 @@
 			<!-- grids -->
 			<div class="grids">
 				<div class="progressbar-heading grids-heading">
-					<h2>Evento | <?php echo $linha['nome']?></h2>
+					<h2>Validar Presença | <?php echo $linha['nome']?></h2>
 				</div>
 				<div class="panel panel-widget forms-panel">
 					<div class="forms">
