@@ -1,7 +1,7 @@
 <?php
 session_start();
-require_once("classes/Conexao.php");
-$cx = new Conexao();
+require_once("classes/Conn.php");
+$cx = Conn::getInstance();
 $btnlogin = $_POST['btnlogin'];
 if($btnlogin){
 	$email = $_POST['email'];
