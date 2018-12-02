@@ -48,7 +48,7 @@
 							</div>
 							<div class="col-md-2">
 								<form action="">		
-									<input onclick="window.location='gerarcracha.php';" type="button" class="btn btn-primary btn-block" value="Gerar Crachá">
+									<input onclick="window.location='gerarcracha.php?id_evento=<?php echo $id_evento?>';" type="button" class="btn btn-primary btn-block" value="Gerar Crachá">
 								</form>			
 							</div>
 							<div class="col-md-2">
