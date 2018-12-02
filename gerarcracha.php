@@ -1,9 +1,11 @@
 <?php
  	session_start();
 	if(!empty($_SESSION['id_usuario'])){
-	    require_once("classes/DAOUsuario.php");	
+	    require_once("classes/DAOUsuario.php");
+	    require_once("classes/DAOEvento.php");	
 	    $id_evento = $_GET['id_evento']; 
 	    $con = (new DAOUsuario())->ListarInscrito($id_evento);
+	    $evento = (new DAOEvento())->Exibir($id_evento);
 	}else{
 		header("Location: login.php");
 	}
@@ -11,7 +13,7 @@
 ?>
 <!DOCTYPE html>
 <head>
-	<title>SisGEv | Gerar Crachá</title>
+	<title>SisGEv | Gerar Crachá <?php echo $evento['nome']?></title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="keywords" content="Colored Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
@@ -34,7 +36,7 @@
 			<!-- grids -->
 			<div class="grids">
 				<div class="progressbar-heading grids-heading">
-					<h2 align="center">Gerar Crachá</h2>
+					<h2 align="center">Gerar Crachá | <?php echo $evento['nome']?></h2>
 				</div>
 				<div class="panel panel-widget forms-panel">
 					<div class="form-title">
@@ -60,7 +62,7 @@
 
 									<?php while ($linhas = mysqli_fetch_array($con)){?>
 									<td align="center"><?php echo $linhas["nome_participante"]; ?></td>
-									<td align="center"><a class="fa fa-plus-square" href="imprimirCracha.php?id_participante=<?php echo $linhas[0];?>" title="Gerar Crachá"></a></td>
+									<td align="center"><a class="fa fa-plus-square" href="imprimirCracha.php?id_participante=<?php echo $linhas[0];?>" title="Gerar Crachá"  target="_blank"></a></td>
 								</tr>
 								<?php } ?>
 							</tbody>
