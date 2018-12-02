@@ -77,11 +77,8 @@
 <?php
     if($_POST){
         require_once("classes/Usuario.php");
-        require_once("classes/Conexao.php");
         require_once("classes/DAOUsuario.php");
         $usuario = new Usuario($_POST['nome'], $_POST['email'], $_POST['senha']);
-        //$cx = new Conexao();
-        $dao = new DAOUsuario();
-        $dao->Criar($usuario);        
+        $dao = (new DAOUsuario())->Criar($usuario);        
     }
 ?>

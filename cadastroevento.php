@@ -132,7 +132,6 @@
 <?php
     if($_POST){
     	require_once("classes/Evento.php");
-    	require_once("classes/Conexao.php");
     	require_once("classes/DAOEvento.php");
         $evento = new Evento($_POST['nomeevento'], $_POST['sobreevento'], $_POST['datainicio'], $_POST['datafim'], $_POST['programacao'], $_POST['contatos']);
         $dao = (new DAOEvento())->Criar($evento);        
