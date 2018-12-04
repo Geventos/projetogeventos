@@ -24,13 +24,13 @@ session_start();
     <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">    
   </head>
   <body>
-    <?php require_once("menufe.php");?>
+    <?php  include("menufe.php");?>
     <section class="engine"><a href="https://mobiri.se/c">website builder</a></section><section class="cid-qVb72QGGYL mbr-fullscreen mbr-parallax-background" id="header15-17">    
-    <div class="mbr-overlay" style="opacity: 0.5; background-color: black;"></div>
+    <div class="mbr-overlay" style="opacity: 0.5; background-color: #979485;"></div>
     <div class="container align-right">
       <div class="row">
-        <div class="mbr-white col-lg-8 col-md-7 content-container">
-          <h1 class="mbr-section-title mbr-bold pb-3 mbr-fonts-style display-1" align="center">LOGIN</h1>
+        <div class="mbr-white col-lg-8 col-md-7 content-container" style="top: 50px ">
+          <h1 class="mbr-section-title mbr-bold pb-3 mbr-fonts-style display-1" align="center" style="color: #354053">LOGIN</h1>
         </div>
         <div class="col-lg-4 col-md-5">
           <div class="form-container">
@@ -58,12 +58,12 @@ session_start();
                   <div class=col-lg-6">
                     <a align="right">PROBLEMAS COM LOGIN?</a>
                   </div>
-                  <div class=col-lg-6">
+                  <div class=col-lg-8 style="position: absolute; left: -40px; top: 200px;">
                     <span class="input-group-btn">
                       <input onclick="window.location='cadastrousuario.php';" type="button" class="btn btn-form btn-danger display-4" value="CADASTRAR">
                     </span>
                   </div>
-                  <div class=col-lg-6">
+                  <div class=col-lg-8 style="position: absolute; left: 150px; top: 200px;">
                     <span class="input-group-btn">
                       <input type="submit" class="btn btn-form btn-danger display-4" name="btnlogin" value="ENTRAR">
                     </span>
