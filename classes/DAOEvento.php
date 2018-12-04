@@ -96,7 +96,6 @@ class DAOEvento {
         $consulta ="SELECT * FROM evento ORDER BY data_ini";
         $con = mysqli_query($this->conexao->getBanco(), $consulta);
         return $con;
-        mysqli_close($this->conexao);
     }
 
     public function Exibir($idevento){
@@ -104,6 +103,12 @@ class DAOEvento {
         $con = mysqli_query($this->conexao->getBanco(), $consulta);
         $linha = mysqli_fetch_assoc($con);
         return $linha;
+    }
+
+    public function Validado($idevento){
+        $consulta = "select * from inscricao where status = 'presente' and id_evento = $idevento order by time(datahora) desc limit 10;";
+        $con = mysqli_query($this->conexao->getBanco(), $consulta);
+        return $con;
     }
 
 }
