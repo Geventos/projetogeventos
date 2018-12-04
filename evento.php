@@ -1,6 +1,5 @@
 <?php  
     require_once("classes/DAOEvento.php");
-    require_once("classes/Evento.php");
     $id_evento = $_GET['id_evento'];
     $linha = (new DAOEvento())->Exibir($id_evento);
 ?>
