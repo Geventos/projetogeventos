@@ -28,9 +28,8 @@
                         </div>
                         <div class="col-md-3 multi-horizontal">
                             <div class="row row-sm-offset">
-                            <form action="inscricoes.php">
-                                <button type="submit" class="btn btn-primary">INSCRIÇÃO</button>
-                            </form>
+                                <input onclick="window.location='inscricoes.php?id_evento=<?php echo $id_evento;?>';" type="button" class="btn btn-primary btn-block" value="INSCRIÇÃO">
+                         
                             </div>
                             <div class="row row-sm-offset">
                                 <button href="" type="submit" class="btn btn-primary">CERTIFICADO</button>

@@ -1,3 +1,8 @@
+<?php  
+    require_once("classes/DAOEvento.php");
+    $id_evento = $_GET['id_evento'];
+    $linha = (new DAOEvento())->Exibir($id_evento);
+?>
 <!DOCTYPE html>
 <html >
 <head>
@@ -17,16 +22,16 @@
 <?php require_once("menufe.php"); ?>
 <section class="mbr-section form1 cid-r5ll0QmIUj" id="form1-8">
   <div class="col-md-9 multi-horizontal">
-       <h3 class="mbr-section-title align-center pb-3 mbr-fonts-style display-2">[NOME EVENTO]</h3>
+       <h3 class="mbr-section-title align-center pb-3 mbr-fonts-style display-2"><?php echo $linha['nome']?></h3>
   </div>
   <div class="col-md-3 multi-horizontal">
-  <form class="col-md-8" method="get">
+  <form class="col-md-8" method="post">
     <div class="form-group col-md-12s">
     <input type="hidden" value="1" name="id_evento"/> 
   <div class="form-row">
     <div class="form-group col-md-6">
       <label for="inputEmail4">Nome</label>
-      <input type="nome" class="form-control" name="id_inscrito" placeholder="Nome">
+      <input type="nome" class="form-control" name="nome" placeholder="Nome">
     </div>
     <div class="form-group col-md-6">
       <label for="inputPassword4">Instituição</label>
@@ -52,3 +57,12 @@
  </body>
 
  </html>
+
+ <?php
+    if($_POST){
+      require_once("classes/Inscrito.php");
+      require_once("classes/DAOInscrito.php");
+        $inscrito = new Inscrito($_POST['nome'], $_POST['cpf'], $_POST['instituicao']);
+        $dao = (new DAOInscrito())->Inscricao($inscrito, $id_evento);        
+    }
+?>

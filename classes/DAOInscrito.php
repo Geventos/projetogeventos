@@ -8,21 +8,21 @@ class DAOInscrito {
         $this->conexao = Conn::getInstance();
     }
     
-    public function Incricao($inscrito, $idevento){
-        $sql = "insert into inscricao(nome_participante, cpf, id_evento) values('";
-        $sql = $sql . $inscrito->getNome() . "','" . $inscrito->getCpf() . "','" . $idevento . "')";
+    public function Inscricao($inscrito, $idevento){
+        $sql = "insert into inscricao(nome_participante, cpf, instituicao, id_evento) values('";
+        $sql = $sql . $inscrito->getNome() . "','" . $inscrito->getCpf() . "','" . $inscrito->getInstituicao() . "','" . $idevento . "')";
         $banco = $this->conexao->getBanco();
         $banco->query($sql);
         $linhas = mysqli_affected_rows($banco);        
         if($linhas == 1){
             echo "<script type='text/javascript'>
                     alert('Inscrição efetuado com sucesso!');
-                    location.href='adm-eventos.php';
+                    location.href='evento.php?id_evento=$idevento';
                 </script>";
          }else{
             echo "<script type='text/javascript'>
                     alert('Inscrição NÃO efetuado!');
-                    location.href='adm-eventos.php';
+                    location.href='evento.php?id_evento=$idevento';
                 </script>";
         }
     }

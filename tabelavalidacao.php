@@ -1,3 +1,4 @@
+<div style = "position: absolute; top: 55px; left: 138px;">
 <div class="bs-docs-example wow fadeInUp animated" data-wow-delay=".5s">
 	<table class="table table-hover">
 		<thead>
@@ -17,4 +18,4 @@
 		<?php } ?> 
 	</tbody>
 </table>
-</div>
+</div></div>
