@@ -10,7 +10,7 @@
 		</thead>
 		<tbody>
 		<tr>
-			<?php while ($linhas = mysqli_fetch_array($conv)){?>			
+			<?php while ($linhas = mysqli_fetch_array($consultavalidado)){?>			
 			<td ><?php echo $linhas["nome_participante"]; ?></td>
 			<td ><?php echo $linhas["status"]; ?></td>
 			<td align="center"><?php echo date ("h:i:s", strtotime($linhas['datahora']));?></td>
