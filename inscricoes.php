@@ -20,42 +20,29 @@
        <h3 class="mbr-section-title align-center pb-3 mbr-fonts-style display-2">[NOME EVENTO]</h3>
   </div>
   <div class="col-md-3 multi-horizontal">
-  <form class="col-md-8">
+  <form class="col-md-8" method="get">
     <div class="form-group col-md-12s">
+    <input type="hidden" value="1" name="id_evento"/> 
   <div class="form-row">
-    <div class="form-group col-md-3">
+    <div class="form-group col-md-6">
       <label for="inputEmail4">Nome</label>
-      <input type="nome" class="form-control" id="inputEmail4" placeholder="Nome">
+      <input type="nome" class="form-control" name="id_inscrito" placeholder="Nome">
     </div>
-    <div class="form-group col-md-3">
+    <div class="form-group col-md-6">
       <label for="inputPassword4">Instituição</label>
-      <input type="text" class="form-control" id="inputPassword4" placeholder="Instituição">
+      <input type="text" class="form-control" name="instituicao" placeholder="Instituição">
     </div>
   </div>
   <div class="form-group">
-    <label for="inputAddress">Estado</label>
-    <input type="text" class="form-control" id="inputAddress" placeholder="Estado">
+    <label for="inputAddress">CPF</label>
+    <input type="text" class="form-control" name="cpf" placeholder="CPF">
   </div>
-  <div class="form-group">
-    <label for="inputAddress2">Cidade</label>
-    <input type="text" class="form-control" id="inputAddress2" placeholder="Cidade">
-  </div>
-  <div class="form-row">
-    <div class="form-group col-md-3">
-      <label for="inputRua">Rua</label>
-      <input type="text" class="form-control" id="inputRua" placeholder="Endereço">
-    </div>
-     <div class="form-row">
-    <div class="form-group col-md-8">
-      <label for="inputNumero">Número</label>
-      <input type="text" class="form-control" id="inputNumero" placeholder="Número">
-    </div>
-
 </div>
 </div>
 </div>
 <button type="submit" class="btn btn-primary" style= "width: 50%px; height: 45%px" >Cancelar</button>
 <button type="submit" class="btn btn-primary" style= "width: 55%px; height: 55%px" >Salvar</button>
+<button type="submit" formmethod="get" formaction="./comprovante_inscricao.php" class="btn btn-primary" style= "width: 50%px; height: 45%px" >Gerar Comprovante</button>
 
 </form> 
 </div>
