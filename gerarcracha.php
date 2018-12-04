@@ -1,10 +1,10 @@
 <?php
  	session_start();
 	if(!empty($_SESSION['id_usuario'])){
-	    require_once("classes/DAOUsuario.php");
+	    require_once("classes/DAOInscrito.php");
 	    require_once("classes/DAOEvento.php");	
 	    $id_evento = $_GET['id_evento']; 
-	    $con = (new DAOUsuario())->ListarInscrito($id_evento);
+	    $con = (new DAOInscrito())->ListarInscrito($id_evento);
 	    $evento = (new DAOEvento())->Exibir($id_evento);
 	}else{
 		header("Location: login.php");

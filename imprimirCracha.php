@@ -1,9 +1,9 @@
 <?php
-require_once("classes/DAOUsuario.php");	  
+require_once("classes/DAOInscrito.php");	  
 $id_inscrito = $_GET['id_participante'];  
-$con = (new DAOUsuario())->gerarCracha($id_inscrito);
-$nome = (new DAOUsuario())->nomeInscrito($id_inscrito);
-$nomeEvento = (new DAOUsuario())->nomeEvento($id_inscrito);
+$con = (new DAOInscrito())->gerarCracha($id_inscrito);
+$nome = (new DAOInscrito())->nomeInscrito($id_inscrito);
+$nomeEvento = (new DAOInscrito())->nomeEvento($id_inscrito);
 ?>
 
 <img src="img/cracha2.png" alt="">
@@ -11,7 +11,7 @@ $nomeEvento = (new DAOUsuario())->nomeEvento($id_inscrito);
 		<div style = "position: absolute; top: 188px; left: 138px;">
 			
 			<h2><?php echo $nome['nome_participante'];?></h2>
-			<div style = " position: absolute; top: 30px; width: 1000px; left: -85px">
+			<div style = " position: absolute; top: 36px; width: 1000px; left: -85px">
 			<h6><?php echo $nomeEvento['nome'];?></h6>
 			</div>
 		</div>
