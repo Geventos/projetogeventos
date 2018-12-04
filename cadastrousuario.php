@@ -49,12 +49,15 @@
                                     </div>
                                 </div>
                             </div>
+
+                            
                             <div class="row row-sm-offset">
-                                <div class="col-md-3" >
-                                    <button type="reset" class="btn btn-primary">Limpar</button>
+                                <div class="col-lg-2.5" >
+                                    <button type="reset" class="btn btn-primary">LIMPAR</button>
                                 </div>
-                                <div class="col-md-3">
-                                    <button type="submit" class="btn btn-primary">Salvar</button>
+                                <div class="col-lg-2.5">
+                                    <input onclick="window.location='login.php';" type="button" class="btn btn-primary btn-block" value="SALVAR">
+                                
                                 </div>
                             </div>                            
                         </div>

@@ -11,7 +11,7 @@ $nomeEvento = (new DAOInscrito())->nomeEvento($id_inscrito);
 		<div style = "position: absolute; top: 188px; left: 138px;">
 			
 			<h2><?php echo $nome['nome_participante'];?></h2>
-			<div style = " position: absolute; top: 36px; width: 1000px; left: -85px">
+			<div style = "position: absolute; top: 36px; width: 1000px; left: -85px">
 			<h6><?php echo $nomeEvento['nome'];?></h6>
 			</div>
 		</div>
