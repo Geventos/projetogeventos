@@ -17,14 +17,13 @@
   <body>
     <?php require_once("menufe.php"); ?>
     <section class="section-table cid-r5loR0dIRC" id="table1-f">
-      <div class="container container-table">
+      <div class="container container-table" style="top: 50px;">
         <h2 class="mbr-section-title mbr-fonts-style align-center pb-3 display-2">Eventos</h2>
         <div class="table-wrapper">
           <div class="container">
             <div class="row search">              
                 <div class="dataTables_filter">
-                  <label class="searchInfo mbr-fonts-style">Buscar:</label>
-                  <input class="form-control input-sm">
+                  
                 </div> 
             </div>
           </div>
