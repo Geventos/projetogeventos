@@ -64,7 +64,7 @@
 | ---------- | --------------------------- | ----------------- | ----------------------- |
 | 2          | Documentação do projeto     | Equipe            | 30/04/2019 - 07/05/2019 |
 | 2          | Dicionário de dados         | Bismark           | 30/04/2019 - 07/05/2019 |
-| 2          | Capacitação em ferramentoas | Denys e Juliana   | 30/04/2019 - 07/05/2019 |
+| 2          | Capacitação em ferramentas  | Denys e Juliana   | 30/04/2019 - 07/05/2019 |
 | 2          | Protótipos de tela          | Denys e Juliana   | 30/04/2019 - 07/05/2019 |
 | 2          | Logo do projeto             | Juliana           | 30/04/2019 - 07/05/2019 |
 | 2          | Cronograma                  | Hélio e Cristovão | 30/04/2019 - 07/05/2019 |
