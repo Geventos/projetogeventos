@@ -27,7 +27,7 @@
 
 * **Denys Nyckson** - [denysnyckson](https://github.com/denysnyckson)
 * **Cristovão Lima** - [cristovaolima](https://github.com/cristovaolima)
-* **Hélio Evangelista** - [helioemjunior](https://github.com/helioemjunior)
+* **Hélio Júnior** - [helioemjunior](https://github.com/helioemjunior)
 * **Bismark Victor** - [bismarkvictor](https://github.com/bismarkvictor)
 * **Juliana Oliveira** - [juoliveiraf](https://github.com/juoliveiraf)
 
