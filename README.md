@@ -69,7 +69,7 @@
 | 2          | Logo do projeto             | Juliana           | 30/04/2019 - 07/05/2019 |
 | 2          | Cronograma                  | Hélio e Cristovão | 30/04/2019 - 07/05/2019 |
 | 2          | Reunião 30/04               | Equipe            | 30/04/2019 - 30/04/2019 |
-| 2          | Reunião 07/05               | Equipe            | 30/04/2019 - 30/04/2019 |
+| 2          | Reunião 07/05               | Equipe            | 07/05/2019 - 07/05/2019 |
 
 
 
