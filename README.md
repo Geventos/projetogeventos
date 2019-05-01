@@ -33,9 +33,8 @@
 
 ## Responsabilidades + Gerência
 
-### Gerente atual: [denysnyckson](https://github.com/denysnyckson)
+### Gerente 1ª Iteração: [denysnyckson](https://github.com/denysnyckson)
 
-#### Iteração atual: 1ª
 
 | *Iteração* | *Aluno*     | *Função*      | *Inicio - Fim*          |
 | ---------- | ----------- | ------------- | ----------------------- |
@@ -44,6 +43,36 @@
 | 1          | Bismark     | Desenvolvedor |                         |
 | 1          | Juliana     | Desenvolvedor |                         |
 | 1          | Helio       | Desenvolvedor |                         |
+
+
+### Gerente atual: [helioemjunior](https://github.com/helioemjunior)
+
+#### Iteração atual: 2ª
+
+| *Iteração* | *Aluno*     | *Função*      | *Inicio - Fim*          |
+| ---------- | ----------- | ------------- | ----------------------- |
+| *2*        | *Hélio*     | *Gerente*     |*26/04/2019 - 10/05/2019*|
+| 2          | Cristovão   | Desenvolvedor |                         |
+| 2          | Bismark     | Desenvolvedor |                         |
+| 2          | Juliana     | Desenvolvedor |                         |
+| 2          | Denys       | Desenvolvedor |                         |
+
+
+### Tarefas da 2ª Iteração
+
+| *Iteração* |          *Tarefa*           | *Atrubuido para*  | *Inicio - Fim*          |
+| ---------- | --------------------------- | ----------------- | ----------------------- |
+| 2          | Documentação do projeto     | Equipe            | 30/04/2019 - 07/05/2019 |
+| 2          | Dicionário de dados         | Bismark           | 30/04/2019 - 07/05/2019 |
+| 2          | Capacitação em ferramentoas | Denys e Juliana   | 30/04/2019 - 07/05/2019 |
+| 2          | Protótipos de tela          | Denys e Juliana   | 30/04/2019 - 07/05/2019 |
+| 2          | Logo do projeto             | Juliana           | 30/04/2019 - 07/05/2019 |
+| 2          | Cronograma                  | Hélio e Cristovão | 30/04/2019 - 07/05/2019 |
+| 2          | Reunião 30/04               | Equipe            | 30/04/2019 - 30/04/2019 |
+| 2          | Reunião 07/05               | Equipe            | 30/04/2019 - 30/04/2019 |
+
+
+
 
 
 ## Licença
