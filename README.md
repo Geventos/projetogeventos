@@ -60,16 +60,16 @@
 
 ### Tarefas da 2ª Iteração
 
-| *Iteração* |          *Tarefa*           | *Atrubuido para*  | *Inicio - Fim*          |
-| ---------- | --------------------------- | ----------------- | ----------------------- |
-| 2          | Documentação do projeto     | Equipe            | 30/04/2019 - 07/05/2019 |
-| 2          | Dicionário de dados         | Bismark           | 30/04/2019 - 07/05/2019 |
-| 2          | Capacitação em ferramentas  | Denys e Juliana   | 30/04/2019 - 07/05/2019 |
-| 2          | Protótipos de tela          | Denys e Juliana   | 30/04/2019 - 07/05/2019 |
-| 2          | Logo do projeto             | Juliana           | 30/04/2019 - 07/05/2019 |
-| 2          | Cronograma                  | Hélio e Cristovão | 30/04/2019 - 07/05/2019 |
-| 2          | Reunião 30/04               | Equipe            | 30/04/2019 - 30/04/2019 |
-| 2          | Reunião 07/05               | Equipe            | 07/05/2019 - 07/05/2019 |
+| *Iteração* |          *Tarefa*           | *Atrubuido para*  |     *Inicio - Fim - Prorrogado*      |
+| ---------- | --------------------------- | ----------------- | ------------------------------------ |
+| 2          | Documentação do projeto     | Equipe            | 30/04/2019 - 07/05/2019 - 09/05/2019 |
+| 2          | Dicionário de dados         | Bismark           | 30/04/2019 - 07/05/2019 -            |
+| 2          | Capacitação em ferramentas  | Denys e Juliana   | 30/04/2019 - 07/05/2019 -            |
+| 2          | Protótipos de tela          | Denys e Juliana   | 30/04/2019 - 07/05/2019 - 09/05/2019 |
+| 2          | Logo do projeto             | Juliana           | 30/04/2019 - 07/05/2019 - 09/05/2019 |
+| 2          | Cronograma                  | Hélio e Cristovão | 30/04/2019 - 07/05/2019 -            |
+| 2          | Reunião 30/04               | Equipe            | 30/04/2019 - 30/04/2019 -            |
+| 2          | Reunião 07/05               | Equipe            | 07/05/2019 - 07/05/2019 -            |
 
 
 
