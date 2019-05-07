@@ -7,14 +7,15 @@ CREATE TABLE `usuario` (
   `nome_completo` varchar(100) not null,
   `senha` varchar(20) not null,
   `email` varchar(50) not null,
-  `permissao` int(10) default 0,
+  `cpf` int(10) default 0,
   primary key (`id_usuario`)
 )CHARACTER SET utf8 COLLATE utf8_general_ci;
 
 CREATE TABLE `permissao`(
   `id_evento` int(10)  not null,
   `id_usuario` int(10) not null,
-  `tipo_permissao` int(10) not null
+  `tipo_permissao` int(10) not null,
+  primary key (`id_evento`, `id_usuario`)
 )CHARACTER SET utf8 COLLATE utf8_general_ci;
 
 CREATE TABLE `evento`(
@@ -25,18 +26,29 @@ CREATE TABLE `evento`(
   `sobre` text,
   `programacao` text,
   `contatos` varchar(100),
+  `banner` longblob NOT NULL;
+  `logo` longblob NOT NULL;
+  `url` varchar NOT NULL;
   primary key (`id_evento`)
 )CHARACTER SET utf8 COLLATE utf8_general_ci;
 
-create table `inscricao`(
-   `id_participante` int(10) auto_increment,
-   `nome_participante` varchar(50) not null,
+create table `controle_acesso`(
+  `id_evento` int(10) auto_increment,
+  `id_inscrito` int(50) auto_increment,
+  `chekin` datetime,
+  `chekout` datetime,
+primary key (`id_evento`, `id_inscrito`)
+)CHARACTER SET utf8 COLLATE utf8_general_ci;
+
+create table `inscrito`(
+   `id_inscrito` int(10) auto_increment,
+   `nome_inscrito` varchar(50) not null,
+   `email_inscrito` varchar(50) not null,
    `cpf` int(11) not null,
    `instituicao` varchar(50),
    `id_evento` int(10) not null,
    `status` varchar(50) default 'inscrito',
-   `datahora` datetime,
-	primary key (`id_participante`)
+   primary key (`id_inscrito`)
 )CHARACTER SET utf8 COLLATE utf8_general_ci;
 
 
