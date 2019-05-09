@@ -1,6 +1,7 @@
 ## Sistema gerenciador de eventos acadêmicos.
 
- O GEv é uma ferramenta para o gerenciamento de eventos acadêmicos. Fornece a instituição uma maneira fácil para gerir o seu evento. Ao adotar o software para o seu evento a instituição poderá fazer diversas tarefas, sendo elas: inscrição no evento - o usuário irá se inscrever no evento pela página oficial. Controle de presença - umas das principais funcionalidades do sistema, cada inscrito no evento receberá um crachá que tem um QR Code, esse código será utilizado para confirmar a presença no evento e nos seus possíveis sub-eventos.
+O GEv - Sistema Gerenciador de Eventos - é uma ferramenta para o gerenciamento de eventos. Fornece ao usuário uma maneira fácil para gerir o seu evento. 
+Ao adotar o software para o seu evento a instituição poderá fazer diversas tarefas, sendo elas: inscrição no evento - o usuário irá se inscrever no evento pela página oficial. Além disso, o sistema terá um controle de presença a partir de QR-Code, cada inscrito no evento receberá um crachá com os seus dados de identificação e o QR-Code. Esse código será utilizado para que o inscrito faça check-in e checkout no evento e nos seus possíveis sub-eventos.
 
 1. Termo utilizado no ambiente institucional para caracterizar a guarda temporária de patrimonio.
 
@@ -12,9 +13,9 @@
 
 ### Execução
 
-1. Criar o banco de dados na pasta [sql/](https://github.com/rodrigoaggeu/GP3U/tree/master/sql)
+1. Criar o banco de dados na pasta 
 2. Iniciar o servidor PHP
-3. Em um navegador acessar pagina [localhost](http://localhost)
+3. Em um navegador acessar pagina [localhost]
 4. Acessar o diretório do projeto (pode variar dependendo de qual servidor for ultilizado)
 
 ## Desenvolvido com
@@ -60,16 +61,20 @@
 
 ### Tarefas da 2ª Iteração
 
-| *Iteração* |          *Tarefa*           | *Atrubuido para*  |     *Inicio - Fim - Prorrogado*      |
-| ---------- | --------------------------- | ----------------- | ------------------------------------ |
-| 2          | Documentação do projeto     | Equipe            | 30/04/2019 - 07/05/2019 - 09/05/2019 |
-| 2          | Dicionário de dados         | Bismark           | 30/04/2019 - 07/05/2019 -            |
-| 2          | Capacitação em ferramentas  | Denys e Juliana   | 30/04/2019 - 07/05/2019 -            |
-| 2          | Protótipos de tela          | Denys e Juliana   | 30/04/2019 - 07/05/2019 - 09/05/2019 |
-| 2          | Logo do projeto             | Juliana           | 30/04/2019 - 07/05/2019 - 09/05/2019 |
-| 2          | Cronograma                  | Hélio e Cristovão | 30/04/2019 - 07/05/2019 -            |
-| 2          | Reunião 30/04               | Equipe            | 30/04/2019 - 30/04/2019 -            |
-| 2          | Reunião 07/05               | Equipe            | 07/05/2019 - 07/05/2019 -            |
+| *Iteração* |              *Tarefa*              | *Atrubuido para*  |     *Inicio - Fim - Prorrogado*      |
+| ---------- | ---------------------------------- | ----------------- | ------------------------------------ |
+| 2          | Revisão da documentação do projeto | Cristovão e Hélio | 30/04/2019 - 07/05/2019 - 09/05/2019 |
+| 2          | Dicionário de dados                | Bismark           | 30/04/2019 - 07/05/2019 -            |
+| 2          | Capacitação em ferramentas         | Denys e Juliana   | 30/04/2019 - 07/05/2019 -            |
+| 2          | Protótipos de tela                 | Denys e Juliana   | 30/04/2019 - 07/05/2019 - 09/05/2019 |
+| 2          | Logo do projeto                    | Juliana           | 30/04/2019 - 07/05/2019 - 09/05/2019 |
+| 2          | Cronograma                         | Cristovão e Hélio | 30/04/2019 - 07/05/2019 -            |
+| 2          | Reunião 30/04                      | Equipe            | 30/04/2019 - 30/04/2019 -            |
+| 2          | Reunião 07/05                      | Equipe            | 07/05/2019 - 07/05/2019 -            |
+| 2          | Ata da Reunião 07/05               | Bismark           | 07/05/2019 - 07/05/2019 -            |
+| 2          | Ata da Reunião 30/04               | Bismark           | 30/04/2019 - 07/05/2019 -            |
+| 2          | Atualização Diagrama de classes    | Cristovão e Hélio | 07/05/2019 - 07/05/2019 -            |
+| 2          | Autalização Diagrama casos de uso  | Cristovão e Hélio | 07/05/2019 - 07/05/2019 -            |
 
 
 
