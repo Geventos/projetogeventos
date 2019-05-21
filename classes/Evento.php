@@ -6,14 +6,20 @@ class Evento {
     private $datafim;
     private $programacao;
     private $contatos;
+    private $banner;
+    private $logo;
+    private $urlpersonalizada;
     
-    public function Evento($nome, $sobre, $datainicio, $datafim, $programacao, $contatos) {
+    public function Evento($nome, $sobre, $datainicio, $datafim, $programacao, $contatos, $banner, $logo, $urlpersonalizada) {
         $this->setNome($nome);
         $this->setSobre($sobre);
         $this->setDatainicio($datainicio);
         $this->setDatafim($datafim);
         $this->setProgramacao($programacao);
         $this->setContatos($contatos);
+        $this->setContatos($banner);
+        $this->setContatos($logo);
+        $this->setContatos($urlpersonalizada);
     }
     
     public function getNome() {
@@ -34,6 +40,15 @@ class Evento {
     public function getContatos() {
         return $this->contatos;
     }
+    public function getBanner() {
+        return $this->banner;
+    }
+    public function getLogo() {
+        return $this->logo;
+    }
+    public function getUrl() {
+        return $this->urlpersonalizada;
+    }
     public function setNome($nome) {
         $this->nome = $nome;
     }
@@ -51,5 +66,14 @@ class Evento {
     }
     public function setContatos($contatos) {
         $this->contatos = $contatos;
+    } 
+    public function setBanner($banner) {
+        $this->banner = $banner;
+    } 
+    public function setLogo($logo) {
+        $this->logo = $logo;
+    } 
+    public function setUrl($urlpersonalizada) {
+        $this->urlpersonalizada = $urlpersonalizada;
     }        
 }

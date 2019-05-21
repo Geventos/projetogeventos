@@ -1,17 +1,23 @@
 <?php
 class Inscrito {
     private $nome;
+    private $email;
     private $cpf;
     private $instituicao;
             
-    function __construct($nome, $cpf, $instituicao) {
+    function __construct($nome, $email, $cpf, $instituicao) {
         $this->nome = $nome;
+        $this->email = $email;
         $this->cpf = $cpf;
         $this->instituicao = $instituicao;
     }
     
     function getNome() {
         return $this->nome;
+    }
+
+    function getEmail() {
+        return $this->email;
     }
 
     function getCpf() {
@@ -26,6 +32,9 @@ class Inscrito {
         $this->nome = $nome;
     }
 
+    function setEmail($email) {
+        $this->email = $email;
+    }
     function setCpf($cpf) {
         $this->cpf = $cpf;
     }
