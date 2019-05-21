@@ -8,11 +8,12 @@ class DAOUsuario {
         $this->conexao = Conexao::getInstance();
     }
     
-    public function Criar($usuario) {
-        $sql = "insert into usuario(nome_completo, senha, email) values('";
+    public function criar($usuario) {
+        $sql = "insert into usuario(nome_completo, senha, email, cpf) values('";
         $sql = $sql . $usuario->getNomecompleto() . "','";
         $sql = $sql . $usuario->getSenha() . "','";
-        $sql = $sql . $usuario->getEmail() . "')";
+        $sql = $sql . $usuario->getEmail() . "','";
+        $sql = $sql . $usuario->getCpf() . "')";
         $banco = $this->conexao->getBanco();
         $banco->query($sql);
         $linhas = mysqli_affected_rows($banco);
