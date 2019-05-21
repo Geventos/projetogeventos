@@ -22,13 +22,13 @@ CREATE TABLE `evento`(
   `id_evento` int(10) auto_increment,
   `nome` varchar(50) not null,
   `data_ini` date not null,
-  `data_fim` date default null,
+  `data_fim` date not null,
   `sobre` text,
   `programacao` text,
-  `contatos` varchar(100),
-  `banner` longblob NOT NULL;
-  `logo` longblob NOT NULL;
-  `url` varchar NOT NULL;
+  `contatos` text,
+  `banner` text,
+  `logo` text,
+  `url` text,
   primary key (`id_evento`)
 )CHARACTER SET utf8 COLLATE utf8_general_ci;
 
