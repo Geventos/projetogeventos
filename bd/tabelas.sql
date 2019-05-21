@@ -44,8 +44,8 @@ create table `inscrito`(
    `id_inscrito` int(10) auto_increment,
    `nome_inscrito` varchar(50) not null,
    `email_inscrito` varchar(50) not null,
-   `cpf` int(11) not null,
-   `instituicao` varchar(50),
+   `cpf_inscrito` int(11) not null,
+   `instituicao_inscrito` varchar(50),
    `id_evento` int(10) not null,
    `status` varchar(50) default 'inscrito',
    primary key (`id_inscrito`)
