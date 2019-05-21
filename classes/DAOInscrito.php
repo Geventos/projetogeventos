@@ -8,9 +8,12 @@ class DAOInscrito {
         $this->conexao = Conexao::getInstance();
     }
     
-    public function Inscricao($inscrito, $idevento){
-        $sql = "insert into inscricao(nome_participante, cpf, instituicao, id_evento) values('";
-        $sql = $sql . $inscrito->getNome() . "','" . $inscrito->getCpf() . "','" . $inscrito->getInstituicao() . "','" . $idevento . "')";
+    public function inscricao($inscrito, $idevento){
+        $sql = "insert into inscricao(nome_inscrito, email_inscrito, cpf_inscrito, instituicao_inscrito, id_evento) values('";
+        $sql = $sql . $inscrito->getNome() . "','";
+        $sql = $sql . $inscrito->getEmail() . "','";
+        $sql = $sql . $inscrito->getCpf() . "','";
+        $sql = $sql . $idevento->getInstituicao . "','" . $idevento . "')";
         $banco = $this->conexao->getBanco();
         $banco->query($sql);
         $linhas = mysqli_affected_rows($banco);        
@@ -27,7 +30,8 @@ class DAOInscrito {
         }
     }
 
-        $consulta ="SELECT * FROM inscrito WHERE id_evento = $id_evento";
+    public function listarInscrito($id_evento){
+        $consulta ="SELECT * FROM inscricao WHERE id_evento = $id_evento";
         $con = mysqli_query($this->conexao->getBanco(), $consulta);
         return $con;
         mysqli_close($this->conexao);
@@ -51,5 +55,12 @@ class DAOInscrito {
         $con = mysqli_query($this->conexao->getBanco(), $consulta);
         $nomeEvento = mysqli_fetch_assoc($con);
         return $nomeEvento;
+    }
+
+    public function exibirInscrito($id_inscrito){
+        $consulta = "SELECT * FROM inscrito WHERE id_inscrito = $id_inscrito limit 1";
+        $inscrito = mysqli_query($this->conexao->getBanco(), $consulta);
+        $retorno = mysqli_fetch_assoc($inscrito);
+        return $retorno;
     }
 }
