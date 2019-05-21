@@ -27,7 +27,6 @@ class DAOInscrito {
         }
     }
 
-    public function ListarInscrito($id_evento){
         $consulta ="SELECT * FROM inscrito WHERE id_evento = $id_evento";
         $con = mysqli_query($this->conexao->getBanco(), $consulta);
         return $con;
