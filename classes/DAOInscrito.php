@@ -28,7 +28,7 @@ class DAOInscrito {
     }
 
     public function ListarInscrito($id_evento){
-        $consulta ="SELECT * FROM inscricao WHERE id_evento = $id_evento";
+        $consulta ="SELECT * FROM inscrito WHERE id_evento = $id_evento";
         $con = mysqli_query($this->conexao->getBanco(), $consulta);
         return $con;
         mysqli_close($this->conexao);
@@ -48,7 +48,7 @@ class DAOInscrito {
     }
 
     public function nomeEvento($id_inscrito){
-        $consulta = "SELECT nome FROM evento WHERE id_evento =(SELECT id_evento FROM inscricao WHERE id_participante = $id_inscrito)";
+        $consulta = "SELECT nome FROM evento WHERE id_evento =(SELECT id_evento FROM inscrito WHERE id_inscrito = $id_inscrito)";
         $con = mysqli_query($this->conexao->getBanco(), $consulta);
         $nomeEvento = mysqli_fetch_assoc($con);
         return $nomeEvento;

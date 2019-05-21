@@ -30,9 +30,7 @@ class DAOUsuario {
     }
     
     function login($email, $senha){
-        $sql = "select * from usuario where email= '";
-        $sql = $sql . $email . "' and senha='";
-        $sql = $sql . $senha . "'";
+        $sql = "SELECT * FROM usuario WHERE email = '$email' and senha = '$senha'";
         $banco = $this->conexao->getBanco();
         $banco->query($sql);
         $linhas = mysqli_affected_rows($banco);
@@ -42,8 +40,6 @@ class DAOUsuario {
          }else{
              return FALSE;
         }
-    }
-
-     
+    }   
 
 }
