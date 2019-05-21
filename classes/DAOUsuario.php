@@ -1,11 +1,11 @@
 <?php
-require_once("classes/Conn.php");
+require_once("classes/Conexao.php");
 require_once("classes/Usuario.php");
 class DAOUsuario {
     private $conexao;
     
     function __construct() {
-        $this->conexao = Conn::getInstance();
+        $this->conexao = Conexao::getInstance();
     }
     
     public function Criar($usuario) {
