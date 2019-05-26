@@ -46,9 +46,8 @@ Ao adotar o software para o seu evento a instituição poderá fazer diversas ta
 | 1          | Helio       | Desenvolvedor |                         |
 
 
-### Gerente atual: [helioemjunior](https://github.com/helioemjunior)
+### Gerente 2ª Iteração: [helioemjunior](https://github.com/helioemjunior)
 
-#### Iteração atual: 2ª
 
 | *Iteração* | *Aluno*     | *Função*      | *Inicio - Fim*          |
 | ---------- | ----------- | ------------- | ----------------------- |
@@ -77,6 +76,17 @@ Ao adotar o software para o seu evento a instituição poderá fazer diversas ta
 | 2          | Autalização Diagrama casos de uso  | Cristovão e Hélio | 07/05/2019 - 07/05/2019 -            |
 
 
+### Gerente atual: [juoliveiraf](https://github.com/juoliveiraf)
+
+#### Iteração atual: 3ª
+
+| *Iteração* | *Aluno*     | *Função*      | *Início - Fim*          |
+| ---------- | ----------- | ------------- | ----------------------- |
+| *3*        | *Juliana*   | *Gerente*     |*11/05/2019 - 27/05/2019*|
+| 3          | Cristovão   | Desenvolvedor |                         |
+| 3          | Bismark     | Desenvolvedor |                         |
+| 3          | Hélio       | Desenvolvedor |                         |
+| 3          | Denys       | Desenvolvedor |                         |
 
 
 
