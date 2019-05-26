@@ -105,9 +105,9 @@ Ao adotar o software para o seu evento a instituição poderá fazer diversas ta
 | 3          | Elaboração de Tópicos (Tela Ajuda)   | Bismark           | 14/05/2019 - 26/05/2019 |
 | 3          | Front-End (Tela Inicial)             | Denys             | 14/05/2019 - 26/05/2019 |
 | 3          | Front-End (Tela Eventos)             | Denys             | 14/05/2019 - 26/05/2019 |
-| 3          | Correção Lógica (Eventos)            | Cristóvão e Hélio | 14/05/2019 - 26/05/2019 |
-| 3          | Correção Lógica (Inscrito)           | Cristóvão e Hélio | 14/05/2019 - 26/05/2019 |
-| 3          | Correção Lógica (Usuário)            | Cristóvão e Hélio | 14/05/2019 - 26/05/2019 |
+| 3          | Correção (Eventos)            | Cristóvão e Hélio | 14/05/2019 - 26/05/2019 |
+| 3          | Correção (Inscrito)           | Cristóvão e Hélio | 14/05/2019 - 26/05/2019 |
+| 3          | Correção (Usuário)            | Cristóvão e Hélio | 14/05/2019 - 26/05/2019 |
 | 3          | Correção (DAOEvento)                 | Cristóvão e Hélio | 14/05/2019 - 26/05/2019 |
 | 3          | Correção (DAOInscrito)               | Cristóvão e Hélio | 14/05/2019 - 26/05/2019 |
 | 3          | Correção (DAOUsuario)                | Cristóvão e Hélio | 14/05/2019 - 26/05/2019 |
