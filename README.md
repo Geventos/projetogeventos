@@ -147,7 +147,8 @@ Ao adotar o software para o seu evento a instituição poderá fazer diversas ta
 | Front-End Validar Certificado | Hélio       | 29/05/2019 - 04/06/2019 |
 | Front-End Cadastro para o administrativo | Denys       | 29/05/2019 - 04/06/2019 |
 | Correção da Documentação | Hélio e Gerente       | 29/05/2019 - 04/06/2019 |
-| 2ª Reunião de Andamento do Projeto | Equipe       | 04/06/2019 |
+| Link de Back-End e Front-End - Detalhe de Evento | Hélio       | 29/05/2019 - 08/06/2019 |
+| Link de Back-End e Front-End - Cadastro para o administrativo | Hélio       | 29/05/2019 - 08/06/2019 |
 
 ## Licença
 
