@@ -144,8 +144,8 @@ Ao adotar o software para o seu evento a instituição poderá fazer diversas ta
 | Front-End Sobre | Bismark       | 29/05/2019 - 04/06/2019 |
 | Front-End Contato | Bismark       | 29/05/2019 - 04/06/2019 |
 | Front-End Ajuda | Juliana       | 29/05/2019 - 04/06/2019 |
-| Front-End Validar Certificado | Juliana       | 29/05/2019 - 04/06/2019 |
-| Front-End Cadastro para o administrativo | Bismark       | 29/05/2019 - 04/06/2019 |
+| Front-End Validar Certificado | Hélio       | 29/05/2019 - 04/06/2019 |
+| Front-End Cadastro para o administrativo | Denys       | 29/05/2019 - 04/06/2019 |
 | Correção da Documentação | Hélio e Gerente       | 29/05/2019 - 04/06/2019 |
 | 2ª Reunião de Andamento do Projeto | Equipe       | 04/06/2019 |
 
