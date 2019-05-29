@@ -140,7 +140,7 @@ Ao adotar o software para o seu evento a instituição poderá fazer diversas ta
 | Front-End - Tela Eventos(Tarefa em atraso) | Denys       | 14/05/2019 - 31/05/2019 |
 | Front-End - Tela Inicial(Tarefa em atraso) | Denys       | 14/05/2019 - 31/05/2019 |
 | Front-End - Detalhe de Evento | Denys       | 29/05/2019 - 04/06/2019 |
-| Front-End Inscrição em eventos | Denys       | 29/05/2019 - 04/06/2019 |
+| Front-End Inscrição em eventos | Bismark       | 29/05/2019 - 04/06/2019 |
 | Front-End Sobre | Bismark       | 29/05/2019 - 04/06/2019 |
 | Front-End Contato | Bismark       | 29/05/2019 - 04/06/2019 |
 | Front-End Ajuda | Juliana       | 29/05/2019 - 04/06/2019 |
