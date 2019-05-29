@@ -135,8 +135,8 @@ Ao adotar o software para o seu evento a instituição poderá fazer diversas ta
 |               *Tarefa*               | *Atrubuido para*  |     *Início - Fim*      |
 | ------------------------------------ | ----------------- | ----------------------- |
 | Reunião (Definição de Tarefas)       | Equipe            | 28/05/2019              |
-| Modelo do certificado                | Juliana           | 28/05/2019 - 04/06/2019 |
-| Modelo do Crachá                     | Juliana           | 28/05/2019 - 04/06/2019 |
+| Modelo do certificado                | Juliana           | 28/05/2019 - 08/06/2019 |
+| Modelo do Crachá                     | Juliana           | 28/05/2019 - 08/06/2019 |
 | Front-End - Tela Eventos | Denys       | 14/05/2019 - 08/06/2019 |
 | Front-End - Tela Inicial | Denys       | 14/05/2019 - 08/06/2019 |
 | Front-End - Detalhe de Evento | Denys       | 29/05/2019 - 04/06/2019 |
