@@ -7,7 +7,7 @@ CREATE TABLE `usuario` (
   `nome_completo` varchar(100) not null,
   `senha` varchar(20) not null,
   `email` varchar(50) not null,
-  `cpf` int(10) default 0,
+  `cpf` int(10),
   primary key (`id_usuario`)
 )CHARACTER SET utf8 COLLATE utf8_general_ci;
 
@@ -33,8 +33,8 @@ CREATE TABLE `evento`(
 )CHARACTER SET utf8 COLLATE utf8_general_ci;
 
 create table `controle_acesso`(
-  `id_evento` int(10) auto_increment,
-  `id_inscrito` int(50) auto_increment,
+  `id_evento` int(10),
+  `id_inscrito` int(10),
   `chekin` datetime,
   `chekout` datetime,
 primary key (`id_evento`, `id_inscrito`)
@@ -50,5 +50,3 @@ create table `inscrito`(
    `status` varchar(50) default 'inscrito',
    primary key (`id_inscrito`)
 )CHARACTER SET utf8 COLLATE utf8_general_ci;
-
-
