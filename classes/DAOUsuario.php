@@ -30,16 +30,18 @@ class DAOUsuario {
     }
     
     function login($email, $senha){
-        $sql = "SELECT * FROM usuario WHERE email = '$email' and senha = '$senha'";
+        $sql = "SELECT * FROM usuario WHERE email ='" .$email. "' and senha='" .$senha. "'";
+        $usuario = mysqli_query($this->conexao->getBanco(), $sql);
+        $retorno = mysqli_fetch_assoc($usuario);
+
         $banco = $this->conexao->getBanco();
         $banco->query($sql);
-        $linhas = mysqli_affected_rows($banco);
-        $this->conexao->Desconectar();        
-        if($linhas > 1){
-            return true;
-         }else{
-             return FALSE;
+        $resultado = mysqli_affected_rows($banco);       
+        if($resultado == 1){
+            return $retorno;
+        }else{
+             return 0;
         }
-    }   
+    }
 
 }
