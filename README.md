@@ -155,6 +155,7 @@ Ao adotar o software para o seu evento a instituição poderá fazer diversas ta
 | Ata da 2ª Reunião da Interação 4 | Gerente       | 29/05/2019 - 31/05/2019 |
 | 3ª Reunião de andamento do projeto | Equipe       | 04/06/2019 |
 | Ata da 3ª Reunião da Interação 4 | Gerente       | 03/06/2019 - 06/06/2019 |
+| Correção no Banco de Dados | Hélio       | 03/06/2019 - 06/06/2019 |
 
 ## Licença
 
