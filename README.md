@@ -123,7 +123,7 @@ Ao adotar o software para o seu evento a instituição poderá fazer diversas ta
 
 | *Aluno*     | *Função*      | *Início - Fim*          |
 | ----------- | ------------- | ----------------------- |
-| *Cristovão* |   *Gerente*   | 27/05/2019 - 10/05/2019 |
+| *Cristovão* |   *Gerente*   | 27/05/2019 - 07/06/2019 |
 | Juliana     | Desenvolvedor |                         |
 | Bismark     | Desenvolvedor |                         |
 | Hélio       | Desenvolvedor |                         |
@@ -135,21 +135,21 @@ Ao adotar o software para o seu evento a instituição poderá fazer diversas ta
 |               *Tarefa*               | *Atrubuido para*  |     *Início - Fim*      |
 | ------------------------------------ | ----------------- | ----------------------- |
 | Reunião (Definição de Tarefas)       | Equipe            | 28/05/2019              |
-| Modelo do certificado                | Juliana           | 28/05/2019 - 08/06/2019 |
-| Modelo do Crachá                     | Juliana           | 28/05/2019 - 08/06/2019 |
-| Front-End - Tela Eventos | Denys       | 14/05/2019 - 08/06/2019 |
-| Front-End - Tela Inicial | Denys       | 14/05/2019 - 08/06/2019 |
-| Front-End - Detalhe de Evento | Denys       | 29/05/2019 - 04/06/2019 |
-| Front-End Inscrição em eventos | Bismark       | 29/05/2019 - 04/06/2019 |
-| Front-End Sobre | Bismark       | 29/05/2019 - 04/06/2019 |
-| Front-End Contato | Bismark       | 29/05/2019 - 04/06/2019 |
-| Front-End Ajuda | Juliana       | 29/05/2019 - 04/06/2019 |
-| Front-End Validar Certificado | Hélio       | 29/05/2019 - 04/06/2019 |
-| Front-End Cadastro para o administrativo | Denys       | 29/05/2019 - 04/06/2019 |
+| Modelo do certificado                | Juliana           | 28/05/2019 - 06/06/2019 |
+| Modelo do Crachá                     | Juliana           | 28/05/2019 - 06/06/2019 |
+| Front-End - Tela Eventos | Denys       | 14/05/2019 - 05/06/2019 |
+| Front-End - Tela Inicial | Denys       | 14/05/2019 - 05/06/2019 |
+| Front-End - Detalhe de Evento | Denys       | 29/05/2019 - 05/06/2019 |
+| Front-End Inscrição em eventos | Bismark       | 29/05/2019 - 05/06/2019 |
+| Front-End Sobre | Bismark       | 29/05/2019 - 05/06/2019 |
+| Front-End Contato | Bismark       | 29/05/2019 - 05/06/2019 |
+| Front-End Ajuda | Juliana       | 29/05/2019 - 05/06/2019 |
+| Front-End Validar Certificado | Hélio       | 29/05/2019 - 05/06/2019 |
+| Front-End Cadastro para o administrativo | Denys       | 29/05/2019 - 05/06/2019 |
 | Correção da Documentação | Hélio e Gerente       | 29/05/2019 - 04/06/2019 |
-| Link de Back-End e Front-End - Detalhe de Evento | Hélio       | 29/05/2019 - 08/06/2019 |
-| Link de Back-End e Front-End - Cadastro para o administrativo | Hélio       | 29/05/2019 - 08/06/2019 |
-| Link de Back-End e Front-End - Inscrição em evento | Hélio       | 29/05/2019 - 08/06/2019 |
+| Link de Back-End e Front-End - Detalhe de Evento | Hélio       | 29/05/2019 - 06/06/2019 |
+| Link de Back-End e Front-End - Cadastro para o administrativo | Hélio       | 29/05/2019 - 06/06/2019 |
+| Link de Back-End e Front-End - Inscrição em evento | Hélio       | 29/05/2019 - 06/06/2019 |
 
 ## Licença
 
