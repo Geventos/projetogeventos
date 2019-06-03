@@ -135,6 +135,7 @@ Ao adotar o software para o seu evento a instituição poderá fazer diversas ta
 |               *Tarefa*               | *Atrubuido para*  |     *Início - Fim*      |
 | ------------------------------------ | ----------------- | ----------------------- |
 | Reunião (Definição de Tarefas)       | Equipe            | 28/05/2019              |
+| Ata da 1ª Reunião da Interação 4     | Gerente           | 29/05/2019 - 30/05/2019 |
 | Modelo do certificado                | Juliana           | 28/05/2019 - 06/06/2019 |
 | Modelo do Crachá                     | Juliana           | 28/05/2019 - 06/06/2019 |
 | Front-End - Tela Eventos | Denys       | 14/05/2019 - 05/06/2019 |
@@ -150,6 +151,10 @@ Ao adotar o software para o seu evento a instituição poderá fazer diversas ta
 | Link de Back-End e Front-End - Detalhe de Evento | Hélio       | 29/05/2019 - 06/06/2019 |
 | Link de Back-End e Front-End - Cadastro para o administrativo | Hélio       | 29/05/2019 - 06/06/2019 |
 | Link de Back-End e Front-End - Inscrição em evento | Hélio       | 29/05/2019 - 06/06/2019 |
+| 2ª Reunião de Andamento do Projeto | Equipe       | 29/05/2019 |
+| Ata da 2ª Reunião da Interação 4 | Gerente       | 29/05/2019 - 31/05/2019 |
+| 3ª Reunião de andamento do projeto | Equipe       | 04/06/2019 |
+| Ata da 3ª Reunião da Interação 4 | Gerente       | 03/06/2019 - 06/06/2019 |
 
 ## Licença
 
