@@ -1,8 +1,9 @@
 <?php  
-    require_once("classes/DAOEvento.php");
-    $id_evento = $_GET['id_evento'];
-    $linha = (new DAOEvento())->Exibir($id_evento);
+    // require_once("classes/DAOEvento.php");
+    // $id_evento = $_GET['id_evento'];
+    // $linha = (new DAOEvento())->Exibir($id_evento);
 ?>
+
 <!DOCTYPE html>
 <html >
 <head>
@@ -22,32 +23,34 @@
 <?php require_once("menufe.php"); ?>
 <section class="mbr-section form1 cid-r5ll0QmIUj" id="form1-8">
   <div class="col-md-9 multi-horizontal">
-       <h3 class="mbr-section-title align-center pb-3 mbr-fonts-style display-2"><?php echo $linha['nome']?></h3>
+       <h3 class="mbr-section-title align-center pb-3 mbr-fonts-style display-2"><?php echo $linha['nome']?></h3> 
   </div>
   <div class="col-md-3 multi-horizontal">
-  <form class="col-md-8" method="post">
-    <div class="form-group col-md-12s">
+  <form class="col-md-10" method="post">
+    <div class="form-group col-md-20s">
     <input type="hidden" value="1" name="id_evento"/> 
   <div class="form-row">
-    <div class="form-group col-md-6">
-      <label for="inputEmail4">Nome</label>
+    <div class="form-group col-md-20">
+      <label for="inputNome">NOME COMPLETO</label>
       <input type="nome" class="form-control" name="nome" placeholder="Nome">
     </div>
-    <div class="form-group col-md-6">
-      <label for="inputPassword4">Instituição</label>
+    <div class="form-group col-md-20">
+      <label for="inputEmail">E-MAIL</label>
+      <input type="nome" class="form-control" name="nome" placeholder="Email">
+    </div>
+    <div class="form-group col-md-20">
+      <label for="inputPassword">CPF</label>
+      <input type="text" class="form-control" name="instituicao" placeholder="CPF">
+    </div>
+    <div class="form-group col-md-20">
+      <label for="inputPassword">INSTITUIÇÃO</label>
       <input type="text" class="form-control" name="instituicao" placeholder="Instituição">
     </div>
-  </div>
-  <div class="form-group">
-    <label for="inputAddress">CPF</label>
-    <input type="text" class="form-control" name="cpf" placeholder="CPF">
-  </div>
 </div>
 </div>
 </div>
 <button type="submit" class="btn btn-primary" style= "width: 50%px; height: 45%px" >Cancelar</button>
 <button type="submit" class="btn btn-primary" style= "width: 55%px; height: 55%px" >Salvar</button>
-<button type="submit" formmethod="get" formaction="./comprovante_inscricao.php" class="btn btn-primary" style= "width: 50%px; height: 45%px" >Gerar Comprovante</button>
 
 </form> 
 </div>
@@ -59,10 +62,10 @@
  </html>
 
  <?php
-    if($_POST){
-      require_once("classes/Inscrito.php");
-      require_once("classes/DAOInscrito.php");
-        $inscrito = new Inscrito($_POST['nome'], $_POST['cpf'], $_POST['instituicao']);
-        $dao = (new DAOInscrito())->Inscricao($inscrito, $id_evento);        
-    }
+    //if($_POST){
+      //require_once("classes/Inscrito.php");
+      //require_once("classes/DAOInscrito.php");
+        //$inscrito = new Inscrito($_POST['nome'], $_POST['cpf'], $_POST['instituicao']);
+        //$dao = (new DAOInscrito())->Inscricao($inscrito, $id_evento);        
+    //}
 ?>
