@@ -4,7 +4,7 @@
 	    require_once("classes/DAOInscrito.php");
 	    require_once("classes/DAOEvento.php");	
 	    $id_evento = $_GET['id_evento']; 
-	    $con = (new DAOInscrito())->ListarInscrito($id_evento);
+	    $incritos = (new DAOInscrito())->listarInscrito($id_evento);
 	    $evento = (new DAOEvento())->Exibir($id_evento);
 	}else{
 		header("Location: login.php");
@@ -60,9 +60,9 @@
 							<tbody>
 								<tr>
 
-									<?php while ($linhas = mysqli_fetch_array($con)){?>
-									<td align="center"><?php echo $linhas["nome_participante"]; ?></td>
-									<td align="center"><a class="fa fa-plus-square" href="imprimirCracha.php?id_participante=<?php echo $linhas[0];?>" title="Gerar Crachá"  target="_blank"></a></td>
+									<?php while ($incrito = mysqli_fetch_array($incritos)){?>
+									<td align="center"><?php echo $incrito['nome_inscrito']; ?></td>
+									<td align="center"><a class="fa fa-plus-square" href="imprimirCracha.php?id_participante=<?php echo $incrito[0];?>" title="Gerar Crachá"  target="_blank"></a></td>
 								</tr>
 								<?php } ?>
 							</tbody>
