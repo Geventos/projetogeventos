@@ -31,10 +31,9 @@ class DAOInscrito {
     }
 
     public function listarInscrito($id_evento){
-        $consulta ="SELECT * FROM inscricao WHERE id_evento = $id_evento";
-        $con = mysqli_query($this->conexao->getBanco(), $consulta);
-        return $con;
-        mysqli_close($this->conexao);
+        $consulta ="SELECT * FROM inscrito WHERE id_evento = $id_evento";
+        $retorno = mysqli_query($this->conexao->getBanco(), $consulta);
+        return $retorno;
     }
 
      public function gerarCracha($id_inscrito){
