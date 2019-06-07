@@ -1,7 +1,7 @@
 <?php  
-    require_once("classes/DAOEvento.php");
-    //$id_evento = $_GET['id_evento'];
-    $linha = (new DAOEvento())->Exibir(3);
+    // require_once("classes/DAOEvento.php");
+    // $id_evento = $_GET['id_evento'];
+    // $linha = (new DAOEvento())->Exibir($id_evento);
 ?>
 
 <!DOCTYPE html>
@@ -20,12 +20,10 @@
   
 </head>
 <body>
-<?php
-    require_once("menutopo.php");
-  ?>
+<?php require_once("menufe.php"); ?>
 <section class="mbr-section form1 cid-r5ll0QmIUj" id="form1-8">
   <div class="col-md-9 multi-horizontal">
-       <h3 class="mbr-section-title align-center pb-3 mbr-fonts-style display-2"> Inscrição no Evento<?php echo $linha['nome']?></h3> 
+       <h3 class="mbr-section-title align-center pb-3 mbr-fonts-style display-2"><?php echo $linha['nome']?></h3> 
   </div>
   <div class="col-md-3 multi-horizontal">
   <form class="col-md-10" method="post">
