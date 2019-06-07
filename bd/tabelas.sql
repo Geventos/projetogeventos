@@ -5,8 +5,8 @@ use sisgev;
 CREATE TABLE `usuario` (
   `id_usuario` int(10) auto_increment,
   `nome_completo` varchar(100) not null,
-  `senha` varchar(20) not null,
-  `email` varchar(50) not null,
+  `senha` varbinary(50) not null,
+  `email` varbinary(100) not null,
   `cpf` int(10),
   primary key (`id_usuario`)
 )CHARACTER SET utf8 COLLATE utf8_general_ci;
@@ -21,8 +21,8 @@ CREATE TABLE `permissao`(
 CREATE TABLE `evento`(
   `id_evento` int(10) auto_increment,
   `nome` varchar(50) not null,
-  `data_ini` date not null,
-  `data_fim` date not null,
+  `data_ini` datetime not null,
+  `data_fim` datetime not null,
   `sobre` text,
   `programacao` text,
   `contatos` text,
@@ -49,4 +49,11 @@ create table `inscrito`(
    `id_evento` int(10) not null,
    `status` varchar(50) default 'inscrito',
    primary key (`id_inscrito`)
+)CHARACTER SET utf8 COLLATE utf8_general_ci;
+
+create table `certificado`(
+   `id_certificado` varchar(20) auto_increment,
+   `id_evento` int(10) not null,
+   `id_inscrito` int(10) not null,
+   primary key (`id_certificado`)
 )CHARACTER SET utf8 COLLATE utf8_general_ci;
