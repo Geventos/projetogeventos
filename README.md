@@ -117,7 +117,7 @@ Ao adotar o software para o seu evento a instituição poderá fazer diversas ta
 | 3          | Produção de Apresentação             | Juliana           | 26/05/2019 - 27/05/2019 |
 
 
-### Gerente Atual: [cristovaolima](https://github.com/cristovaolima)
+### Gerente: [cristovaolima](https://github.com/cristovaolima)
 
 #### Iteração 4ª:
 
@@ -157,6 +157,46 @@ Ao adotar o software para o seu evento a instituição poderá fazer diversas ta
 | Ata da 3ª Reunião da Interação 4 | Gerente       | 03/06/2019 - 06/06/2019 |
 | Correção no Banco de Dados | Hélio       | 03/06/2019 - 06/06/2019 |
 
+
+### Gerente: [bismarkvictor](https://github.com/cristovaolima)
+
+#### Iteração 5ª:
+
+| *Aluno*     | *Função*      | *Início - Fim*          |
+| ----------- | ------------- | ----------------------- |
+| *Bismark*   | *Gerente*     |  10/06  -  21/06        |
+| Juliana     | Desenvolvedor |                         |
+| Cristovão   | Desenvolvedor |                         |
+| Hélio       | Desenvolvedor |                         |
+| Denys       | Desenvolvedor |                         |
+
+
+### Tarefas da 5ª Iteração
+
+|               *Tarefa*               | *Atrubuido para*  |     *Início - Fim*      |
+| ------------------------------------ | ----------------- | ----------------------- |
+| Reunião (Definição de Tarefas)       | Equipe            | 28/05/2019              |
+| Ata da 1ª Reunião da Interação 4     | Gerente           | 29/05/2019 - 30/05/2019 |
+| Modelo do certificado                | Juliana           | 28/05/2019 - 06/06/2019 |
+| Modelo do Crachá                     | Juliana           | 28/05/2019 - 06/06/2019 |
+| Front-End - Tela Eventos | Denys       | 14/05/2019 - 05/06/2019 |
+| Front-End - Tela Inicial | Denys       | 14/05/2019 - 05/06/2019 |
+| Front-End - Detalhe de Evento | Denys       | 29/05/2019 - 05/06/2019 |
+| Front-End Inscrição em eventos | Bismark       | 29/05/2019 - 05/06/2019 |
+| Front-End Sobre | Bismark       | 29/05/2019 - 05/06/2019 |
+| Front-End Contato | Bismark       | 29/05/2019 - 05/06/2019 |
+| Front-End Ajuda | Juliana       | 29/05/2019 - 05/06/2019 |
+| Front-End Validar Certificado | Hélio       | 29/05/2019 - 05/06/2019 |
+| Front-End Cadastro para o administrativo | Denys       | 29/05/2019 - 05/06/2019 |
+| Correção da Documentação | Hélio e Gerente       | 29/05/2019 - 04/06/2019 |
+| Link de Back-End e Front-End - Detalhe de Evento | Hélio       | 29/05/2019 - 06/06/2019 |
+| Link de Back-End e Front-End - Cadastro para o administrativo | Hélio       | 29/05/2019 - 06/06/2019 |
+| Link de Back-End e Front-End - Inscrição em evento | Hélio       | 29/05/2019 - 06/06/2019 |
+| 2ª Reunião de Andamento do Projeto | Equipe       | 29/05/2019 |
+| Ata da 2ª Reunião da Interação 4 | Gerente       | 29/05/2019 - 31/05/2019 |
+| 3ª Reunião de andamento do projeto | Equipe       | 04/06/2019 |
+| Ata da 3ª Reunião da Interação 4 | Gerente       | 03/06/2019 - 06/06/2019 |
+| Correção no Banco de Dados | Hélio       | 03/06/2019 - 06/06/2019 |
 ## Licença
 
 This project is licensed under the MIT License - see the [LICENSE](https://github.com/denysnyckson/SISGES/blob/master/LICENSE) file for details.
