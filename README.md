@@ -117,7 +117,7 @@ Ao adotar o software para o seu evento a instituição poderá fazer diversas ta
 | 3          | Produção de Apresentação             | Juliana           | 26/05/2019 - 27/05/2019 |
 
 
-### Gerente Atual: [cristovaolima](https://github.com/cristovaolima)
+### Gerente: [cristovaolima](https://github.com/cristovaolima)
 
 #### Iteração 4ª:
 
@@ -156,6 +156,44 @@ Ao adotar o software para o seu evento a instituição poderá fazer diversas ta
 | 3ª Reunião de andamento do projeto | Equipe       | 04/06/2019 |
 | Ata da 3ª Reunião da Interação 4 | Gerente       | 03/06/2019 - 06/06/2019 |
 | Correção no Banco de Dados | Hélio       | 03/06/2019 - 06/06/2019 |
+
+
+### Gerente: [bismarkvictor](https://github.com/cristovaolima)
+
+#### Iteração 5ª:
+
+| *Aluno*     | *Função*      | *Início - Fim*          |
+| ----------- | ------------- | ----------------------- |
+| *Bismark*   | *Gerente*     |  10/06  -  21/06        |
+| Juliana     | Desenvolvedor |                         |
+| Cristovão   | Desenvolvedor |                         |
+| Hélio       | Desenvolvedor |                         |
+| Denys       | Desenvolvedor |                         |
+
+
+### Tarefas da 5ª Iteração
+
+| *Iteração* |               *Tarefa*               | *Atrubuido para*  |     *Início - Fim*      |
+| ---------- | ------------------------------------ | ----------------- | ----------------------- |
+| 5          | Desenvolvimento do doc TEP           | Bismark           | 11/06/2019 - 19/06/2019 |
+| 5          | Desenvolvimento da analise de riscos | Bismark           | 11/06/2019 - 19/06/2019 |
+| 5          | Atualização de documentos            | Bismark           | 11/06/2019 - 19/06/2019 |
+| 5          | 1ª Ata de Reunião                    | Bismark           | 11/06/2019 - 19/06/2019 |
+| 5          | 2ª Ata de Reunião                    | Bismark           | 11/06/2019 - 19/06/2019 |
+| 5          | Organização do GitHub                | Cristovão         | 11/06/2019 - 19/06/2019 |
+| 5          | Tela Permissão Root (Correção)       | Cristovão         | 11/06/2019 - 19/06/2019 |
+| 5          | Tela Permissão Organizador (Correção)| Cristovão         | 11/06/2019 - 19/06/2019 |
+| 5          | Tela Eventos (Correção)              | Denys             | 11/06/2019 - 19/06/2019 |
+| 5          | Tela Home Organizador (Correção)     | Denys             | 11/06/2019 - 19/06/2019 |
+| 5          | Tela sub Organizador (Correção)      | Denys             | 11/06/2019 - 19/06/2019 |
+| 5          | Tela home                            | Denys             | 11/06/2019 - 19/06/2019 |
+| 5          | Tela Adm evento root (Correção)      | Hélio             | 11/06/2019 - 19/06/2019 |
+| 5          | Tela Adm event organizador (Correção)| Hélio             | 11/06/2019 - 19/06/2019 |
+| 5          | Tela Cadastrar Evento (Correção)     | Juliana           | 11/06/2019 - 19/06/2019 |
+| 5          | Tela Editar Evento root (Correção)   | Juliana           | 11/06/2019 - 19/06/2019 |
+| 5          | Tela Editar Evento root (Correção)   | Juliana           | 11/06/2019 - 19/06/2019 |
+| 5          | Back end - projeto                   | Cristóvão e Hélio | 11/06/2019 - 20/06/2019 |
+
 
 ## Licença
 
