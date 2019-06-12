@@ -191,7 +191,7 @@ Ao adotar o software para o seu evento a instituição poderá fazer diversas ta
 | 5          | Tela Adm event organizador (Correção)| Hélio             | 11/06/2019 - 19/06/2019 |
 | 5          | Tela Cadastrar Evento (Correção)     | Juliana           | 11/06/2019 - 19/06/2019 |
 | 5          | Tela Editar Evento root (Correção)   | Juliana           | 11/06/2019 - 19/06/2019 |
-| 5          | Tela Editar Evento root (Correção)   | Juliana           | 11/06/2019 - 19/06/2019 |
+| 5          | Tela Editar Evento organiz (Correção)| Juliana           | 11/06/2019 - 19/06/2019 |
 | 5          | Back end - projeto                   | Cristóvão e Hélio | 11/06/2019 - 20/06/2019 |
 
 
