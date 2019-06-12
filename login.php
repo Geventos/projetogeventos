@@ -24,7 +24,7 @@ session_start();
     <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">    
   </head>
   <body>
-    <?php  include("menufe.php");?>
+    <?php  include("menutopo.php");?>
     <section class="engine"><a href="https://mobiri.se/c">website builder</a></section><section class="cid-qVb72QGGYL mbr-fullscreen mbr-parallax-background" id="header15-17">    
     <div class="mbr-overlay" style="opacity: 0.5; background-color: #979485;"></div>
     <div class="container align-right">
@@ -34,7 +34,7 @@ session_start();
         </div>
         <div class="col-lg-4 col-md-5">
           <div class="form-container">
-            <form class="mbr-form" action="validaracesso.php" method="post" data-form-title="Mobirise Form">
+            <form class="mbr-form" action="administrativo/validaracesso.php" method="post" data-form-title="Mobirise Form">
               <div class="msg" style="color: red">
                 <?php
                     if(isset($_SESSION['msg'])){

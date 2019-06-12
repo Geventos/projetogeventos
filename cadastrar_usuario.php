@@ -7,7 +7,7 @@
     Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
     <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
     <?php
-        include("links.php");
+        include("administrativo/links.php");
     ?>
     <script src="js/jquery2.0.3.min.js"></script>
     <script src="js/modernizr.js"></script>
@@ -29,8 +29,8 @@
 <body class="dashboard-page">
     <!--MENU e TOPO-->
     <?php
-        include("menu.php");
-        include("topo.php");
+        include("administrativo/menu.php");
+        include("administrativo/topo.php");
     ?>
 	<div class="row clearfix">
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
