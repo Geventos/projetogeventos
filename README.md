@@ -173,30 +173,28 @@ Ao adotar o software para o seu evento a instituição poderá fazer diversas ta
 
 ### Tarefas da 5ª Iteração
 
-|               *Tarefa*               | *Atrubuido para*  |     *Início - Fim*      |
-| ------------------------------------ | ----------------- | ----------------------- |
-| Reunião (Definição de Tarefas)       | Equipe            | 28/05/2019              |
-| Ata da 1ª Reunião da Interação 4     | Gerente           | 29/05/2019 - 30/05/2019 |
-| Modelo do certificado                | Juliana           | 28/05/2019 - 06/06/2019 |
-| Modelo do Crachá                     | Juliana           | 28/05/2019 - 06/06/2019 |
-| Front-End - Tela Eventos | Denys       | 14/05/2019 - 05/06/2019 |
-| Front-End - Tela Inicial | Denys       | 14/05/2019 - 05/06/2019 |
-| Front-End - Detalhe de Evento | Denys       | 29/05/2019 - 05/06/2019 |
-| Front-End Inscrição em eventos | Bismark       | 29/05/2019 - 05/06/2019 |
-| Front-End Sobre | Bismark       | 29/05/2019 - 05/06/2019 |
-| Front-End Contato | Bismark       | 29/05/2019 - 05/06/2019 |
-| Front-End Ajuda | Juliana       | 29/05/2019 - 05/06/2019 |
-| Front-End Validar Certificado | Hélio       | 29/05/2019 - 05/06/2019 |
-| Front-End Cadastro para o administrativo | Denys       | 29/05/2019 - 05/06/2019 |
-| Correção da Documentação | Hélio e Gerente       | 29/05/2019 - 04/06/2019 |
-| Link de Back-End e Front-End - Detalhe de Evento | Hélio       | 29/05/2019 - 06/06/2019 |
-| Link de Back-End e Front-End - Cadastro para o administrativo | Hélio       | 29/05/2019 - 06/06/2019 |
-| Link de Back-End e Front-End - Inscrição em evento | Hélio       | 29/05/2019 - 06/06/2019 |
-| 2ª Reunião de Andamento do Projeto | Equipe       | 29/05/2019 |
-| Ata da 2ª Reunião da Interação 4 | Gerente       | 29/05/2019 - 31/05/2019 |
-| 3ª Reunião de andamento do projeto | Equipe       | 04/06/2019 |
-| Ata da 3ª Reunião da Interação 4 | Gerente       | 03/06/2019 - 06/06/2019 |
-| Correção no Banco de Dados | Hélio       | 03/06/2019 - 06/06/2019 |
+| *Iteração* |               *Tarefa*               | *Atrubuido para*  |     *Início - Fim*      |
+| ---------- | ------------------------------------ | ----------------- | ----------------------- |
+| 5          | Desenvolvimento do doc TEP           | Bismark           | 11/06/2019 - 19/06/2019 |
+| 5          | Desenvolvimento da analise de riscos | Bismark           | 11/06/2019 - 19/06/2019 |
+| 5          | Atualização de documentos            | Bismark           | 11/06/2019 - 19/06/2019 |
+| 5          | 1ª Ata de Reunião                    | Bismark           | 11/06/2019 - 19/06/2019 |
+| 5          | 2ª Ata de Reunião                    | Bismark           | 11/06/2019 - 19/06/2019 |
+| 5          | Organização do GitHub                | Cristovão         | 11/06/2019 - 19/06/2019 |
+| 5          | Tela Permissão Root (Correção)       | Cristovão         | 11/06/2019 - 19/06/2019 |
+| 5          | Tela Permissão Organizador (Correção)| Cristovão         | 11/06/2019 - 19/06/2019 |
+| 5          | Tela Eventos (Correção)              | Denys             | 11/06/2019 - 19/06/2019 |
+| 5          | Tela Home Organizador (Correção)     | Denys             | 11/06/2019 - 19/06/2019 |
+| 5          | Tela sub Organizador (Correção)      | Denys             | 11/06/2019 - 19/06/2019 |
+| 5          | Tela home                            | Denys             | 11/06/2019 - 19/06/2019 |
+| 5          | Tela Adm evento root (Correção)      | Hélio             | 11/06/2019 - 19/06/2019 |
+| 5          | Tela Adm event organizador (Correção)| Hélio             | 11/06/2019 - 19/06/2019 |
+| 5          | Tela Cadastrar Evento (Correção)     | Juliana           | 11/06/2019 - 19/06/2019 |
+| 5          | Tela Editar Evento root (Correção)   | Juliana           | 11/06/2019 - 19/06/2019 |
+| 5          | Tela Editar Evento root (Correção)   | Juliana           | 11/06/2019 - 19/06/2019 |
+| 5          | Back end - projeto                   | Cristóvão e Hélio | 11/06/2019 - 20/06/2019 |
+
+
 ## Licença
 
 This project is licensed under the MIT License - see the [LICENSE](https://github.com/denysnyckson/SISGES/blob/master/LICENSE) file for details.
