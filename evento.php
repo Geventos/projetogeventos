@@ -1,80 +1,76 @@
 <?php  
-    require_once("classes/DAOEvento.php");
-    $id_evento = $_GET['id_evento'];
-    $linha = (new DAOEvento())->Exibir($id_evento);
+    require_once("/administrativo/classes/DAOEvento.php");
+    //$id_evento = $_GET['id_evento'];
+    $linha = (new DAOEvento())->exibir(3);
 ?>
 
 <!DOCTYPE html>
-<html >
-    <head>
-        <title>SisGEv | Evento - <?php echo $linha['nome']?> </title>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="generator" content="Mobirise v4.8.1, mobirise.com">
-        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-        <meta name="description" content="">
-        <?php require_once("linksfe.php"); ?>
-    </head>
-    <body>
-        <?php require_once("menufe.php"); ?>
-        <section class="mbr-section form1 cid-r5ll0QmIUj" id="form1-8">
-            <div class="container">
-                <div class="col-md-12 multi-horizontal">
-                    <div class="row row-sm-offset">
-                        <div class="col-md-9 multi-horizontal">
-                            <h2 class="mbr-section-title align-center pb-3 mbr-fonts-style display-2"><?php echo $linha['nome']?></h2>
-                            <h3 class="mbr-section-subtitle align-center mbr-light pb-3 mbr-fonts-style display-5"><?php echo date ("d/m/Y", strtotime($linha['data_ini']));?> a <?php echo date ("d/m/Y", strtotime($linha['data_fim']));?> </h3>
-                        </div>
-                        <div class="col-md-3 multi-horizontal">
-                            <div class="row row-sm-offset">
-                                <input onclick="window.location='inscricoes.php?id_evento=<?php echo $id_evento;?>';" type="button" class="btn btn-primary btn-block" value="INSCRIÇÃO">
-                         
-                            </div>
-                            <div class="row row-sm-offset">
-                                <button href="" type="submit" class="btn btn-primary">CERTIFICADO</button>
-                            </div>
-                        </div>
+<html  >
+<head>
+  <!-- Site made with Mobirise Website Builder v4.10.0, https://mobirise.com -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Mobirise v4.10.0, mobirise.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <link rel="shortcut icon" href="assets/images/mbr-3-122x122.jpg" type="image/x-icon">
+  <meta name="description" content="">
+  
+  <title>GEv | Evento - <?php echo $linha['nome']?></title>
+  <link rel="stylesheet" href="assets/web/assets/mobirise-icons/mobirise-icons.css">
+  <link rel="stylesheet" href="assets/tether/tether.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="assets/dropdown/css/style.css">
+  <link rel="stylesheet" href="assets/theme/css/style.css">
+  <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+  
+  
+  
+</head>
+<body>
+  <?php
+    require_once("menutopo.php");
+  ?>
+
+<section class="engine"><a href="https://mobirise.info/v">html templates</a></section><section class="services2 cid-rrDR542VLx" id="services2-v">
+    <!---->
+    
+    <!---->
+    <!--Overlay-->
+    
+    <!--Container-->
+    <div class="container">
+        <div class="col-md-12">
+            <div class="media-container-row">
+                <div class="mbr-figure" style="width: 60%;">
+                    <img src="assets/images/mbr-676x451.jpg" alt="Mobirise" title="">
+                </div>
+                <div class="align-left aside-content">
+                    <h2 class="mbr-title pt-2 mbr-fonts-style display-2"><?php echo $linha['nome']?></h2>
+                    <div class="mbr-section-text">
+                        <p class="mbr-text text1 pt-2 mbr-light mbr-fonts-style display-7">
+                            <?php echo $linha['sobre'];?><br><br><strong>LOCAL: </strong>Centro de Tecnologia / UFRN<br><strong>DATA:</strong><?php echo $linha['data_ini'];?><br><strong>HORÁRIO:</strong> 08h00<br></p>
+                        
                     </div>
+                    <!--Btn-->
+                    <div class="mbr-section-btn pt-3 align-left"><a href="https://mobirise.co" class="btn btn-secondary display-4">Inscrição</a></div>
                 </div>
             </div>
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="media-container-column col-lg-12">
-                        <div class="row row-sm-offset">
-                            <div class="col-md-8 multi-horizontal" data-for="name">
-                                <div class="form-group">
-                                    <label class="form-control-label mbr-fonts-style display-7">Sobre o evento</label>
-                                    <textarea type="text" class="form-control" rows="7" disabled> <?php echo $linha['sobre'];?></textarea>
-                                </div>
-                            </div>
-                            <div class="col-md-4 multi-horizontal" data-for="name">
-                                <div class="form-group">
-                                    <label class="form-control-label mbr-fonts-style display-7">Contatos</label>
-                                    <textarea type="text" class="form-control" rows="7" disabled><?php echo $linha['contatos'];?></textarea>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row row-sm-offset">
-                            <div class="col-md-12 multi-horizontal">
-                                <div class="form-group">
-                                    <label class="form-control-label mbr-fonts-style display-7">Programaçao</label>
-                                    <textarea type="text" class="form-control" rows="7" disabled><?php echo $linha['programacao'];?></textarea>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <?php require_once("rodapefe.php"); ?>
-        <script src="assets/web/assets/jquery/jquery.min.js"></script>
-        <script src="assets/popper/popper.min.js"></script>
-        <script src="assets/tether/tether.min.js"></script>
-        <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-        <script src="assets/smoothscroll/smooth-scroll.js"></script>
-        <script src="assets/dropdown/js/script.min.js"></script>
-        <script src="assets/touchswipe/jquery.touch-swipe.min.js"></script>
-        <script src="assets/theme/js/script.js"></script>
-        <script src="assets/formoid/formoid.min.js"></script>
-    </body>
+        </div>
+    </div>
+</section>
+
+
+  <script src="assets/web/assets/jquery/jquery.min.js"></script>
+  <script src="assets/popper/popper.min.js"></script>
+  <script src="assets/tether/tether.min.js"></script>
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/smoothscroll/smooth-scroll.js"></script>
+  <script src="assets/dropdown/js/script.min.js"></script>
+  <script src="assets/touchswipe/jquery.touch-swipe.min.js"></script>
+  <script src="assets/theme/js/script.js"></script>
+  
+  
+</body>
 </html>
