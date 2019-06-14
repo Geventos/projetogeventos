@@ -7,9 +7,8 @@
   <meta name="generator" content="Mobirise v4.10.0, mobirise.com">
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
   <link rel="shortcut icon" href="assets/images/mbr-3-122x122.jpg" type="image/x-icon">
-  <meta name="description" content="">
-  
-  <title>Ajuda</title>
+  <meta name="description" content="">  
+  <title>GEv | Ajuda</title>
   <link rel="stylesheet" href="assets/web/assets/mobirise-icons/mobirise-icons.css">
   <link rel="stylesheet" href="assets/tether/tether.min.css">
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
@@ -17,21 +16,11 @@
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
   <link rel="stylesheet" href="assets/dropdown/css/style.css">
   <link rel="stylesheet" href="assets/theme/css/style.css">
-  <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
-  
-  
-  
+  <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">  
 </head>
 <body>
-   <?php
-    require_once("menutopo.php");
-  ?>
-
-<section class="engine"><a href="https://mobirise.info/o">portfolio web templates</a></section><section class="accordion1 cid-rrDNSNigKd" id="accordion1-t">
-
-    
-
-    
+   <?php require_once("menutopo.php"); ?>
+<section class="engine"><a href="https://mobirise.info/o">portfolio web templates</a></section><section class="accordion1 cid-rrDNSNigKd" id="accordion1-t">    
     <div class="container">
         <div class="media-container-row">
             <div class="col-12 col-md-8">
@@ -60,8 +49,7 @@
                             <a role="button" class="collapsed panel-title text-black" data-toggle="collapse" data-core="" href="#collapse2_32" aria-expanded="false" aria-controls="collapse2">
                                 <h4 class="mbr-fonts-style display-5">
                                     <span class="sign mbr-iconfont mbri-arrow-down inactive"></span>&nbsp;Forma de pagamento</h4>
-                            </a>
-                            
+                            </a>                            
                         </div>
                         <div id="collapse2_32" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#bootstrap-accordion_32">
                             <div class="panel-body p-4">
@@ -117,8 +105,7 @@
         </div>
     </div>
 </section>
-
-
+<?php require_once("rodapesite.php") ?>
   <script src="assets/web/assets/jquery/jquery.min.js"></script>
   <script src="assets/popper/popper.min.js"></script>
   <script src="assets/tether/tether.min.js"></script>
@@ -127,8 +114,6 @@
   <script src="assets/dropdown/js/script.min.js"></script>
   <script src="assets/touchswipe/jquery.touch-swipe.min.js"></script>
   <script src="assets/mbr-switch-arrow/mbr-switch-arrow.js"></script>
-  <script src="assets/theme/js/script.js"></script>
-  
-  
+  <script src="assets/theme/js/script.js"></script>  
 </body>
 </html>

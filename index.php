@@ -85,8 +85,7 @@
         </div>
     </div>
 </section>
-
-
+<?php require_once("rodapesite.php") ?>
   <script src="assets/web/assets/jquery/jquery.min.js"></script>
   <script src="assets/popper/popper.min.js"></script>
   <script src="assets/tether/tether.min.js"></script>
@@ -95,8 +94,6 @@
   <script src="assets/dropdown/js/script.min.js"></script>
   <script src="assets/touchswipe/jquery.touch-swipe.min.js"></script>
   <script src="assets/mbr-popup-btns/mbr-popup-btns.js"></script>
-  <script src="assets/theme/js/script.js"></script>
-  
-  
+  <script src="assets/theme/js/script.js"></script>  
 </body>
 </html>
