@@ -25,7 +25,7 @@
 								<h5><?php echo $_SESSION['nome']; ?></h5>
 								<br>
 								<li> <a href="#"><i class="fa fa-cog"></i> Editar perfil</a> </li>
-								<li> <a href="sair.php"><i class="fa fa-sign-out"></i> Sair</a> </li>
+								<li> <a href="sair"><i class="fa fa-sign-out"></i> Sair</a> </li>
 							</ul>
 						</li>
 					</ul>
