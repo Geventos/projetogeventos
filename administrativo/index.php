@@ -2,9 +2,9 @@
  	session_start();
 	if(!empty($_SESSION['id_usuario'])){
 	    require_once("classes/DAOEvento.php");	    
-	    $eventos = (new DAOEvento())->Listar();
+	    $eventos = (new DAOEvento())->listar();
 	}else{
-		header("Location: login.php");
+		header("Location: ./login.php");
 	}
 	include_once("sessao.php");    
 ?>
