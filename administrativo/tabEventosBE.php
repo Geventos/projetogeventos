@@ -16,7 +16,7 @@
 			<td ><?php echo $evento ["nome"]; ?></td>
 			<td align="center"><?php echo date ("d/m/Y", strtotime($evento['data_ini']));?></td>
 			<td align="center"><?php echo date ("d/m/Y", strtotime($evento['data_fim']));?></td>
-			<td  align="center">  <a class="fa fa-search" href="detalhes-evento.php?id_evento=<?php echo $evento[0];?>"></a> </td>
+			<td  align="center">  <a class="fa fa-search" href="detalhes-evento-root.php?id_evento=<?php echo $evento[0];?>"></a> </td>
 		</tr>
 		<?php } ?> 
 	</tbody>
