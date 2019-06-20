@@ -1,5 +1,5 @@
 <?php  
-    require_once("classes/DAOEvento.php");
+    require_once("administrativo/classes/DAOEvento.php");
     //$id_evento = $_GET['id_evento'];
     $linha = (new DAOEvento())->Exibir(3);
 ?>
@@ -51,14 +51,14 @@
 </div>
 </div>
 </div>
-<button type="submit" class="btn btn-primary" style= "width: 50%px; height: 45%px" >Cancelar</button>
+<button type="submit" class="btn btn-primary" style= "width: 50%px; height: 45%px">Cancelar</button>
 <button type="submit" class="btn btn-primary" style= "width: 55%px; height: 55%px" >Salvar</button>
 
 </form> 
 </div>
 </section>
 
-<?php require_once("rodapefe.php"); ?>
+<?php require_once("rodapesite.php"); ?>
  </body>
 
  </html>

@@ -1,3 +1,8 @@
+<?php  
+    require_once("administrativo/classes/DAOEvento.php");
+    //$id_evento = $_GET['id_evento'];
+    $eventos = (new DAOEvento())->listar();
+?>
 <!DOCTYPE html>
 <html  >
 <head>
@@ -37,48 +42,22 @@
             Eventos destaques</h2>
         
         <div class="media-container-row pt-5 ">
+          <?php while ($evento = mysqli_fetch_array($eventos)){?>
+
             <div class="card p-3 col-12 col-md-6 col-lg-4">
                 <div class="card-wrapper ">
                     <div class="card-img">
                         <div class="mbr-overlay"></div>
-                        <div class="mbr-section-btn text-center"><a href="page5.html" class="btn btn-primary display-4">Inscreva-se</a></div>
+                        <div class="mbr-section-btn text-center"><a href="detalhesevento.php?id_evento=<?php echo $evento[0];?>" class="btn btn-primary display-4">Detalhes</a></div>
                         <img src="assets/images/mbr-676x451.jpg" alt="Mobirise" title="">
                     </div>
                     <div class="card-box">
-                        <h4 class="card-title mbr-fonts-style display-7">
-                            Arduino Day</h4>
-                        <p class="mbr-text mbr-fonts-style align-left display-7">O Arduino Day é um evento internacional plataforma de código e hardware aberto chamada Arduino.</p>
+                        <h4 class="card-title mbr-fonts-style display-7"><?php echo $evento ["nome"]; ?></h4>
+                        <p class="mbr-text mbr-fonts-style align-left display-7"><?php echo $evento ["sobre"]; ?></p>
                     </div>
                 </div>
             </div>
-            <div class="card p-3 col-12 col-md-6 col-lg-4">
-                <div class="card-wrapper">
-                    <div class="card-img">
-                        <div class="mbr-overlay"></div>
-                        <div class="mbr-section-btn text-center"><a href="page5.html" class="btn btn-primary display-4">Inscreva-se</a></div>
-                        <img src="assets/images/mbr-1-676x451.jpg" alt="Mobirise" title="">
-                    </div>
-                    <div class="card-box">
-                        <h4 class="card-title mbr-fonts-style display-7">
-                            Campus Party</h4>
-                        <p class="mbr-text mbr-fonts-style display-7">A Campus Party Brasil é o principal acontecimento tecnológico realizado anualmente no Brasil.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card p-3 col-12 col-md-6 col-lg-4">
-                <div class="card-wrapper">
-                    <div class="card-img">
-                        <div class="mbr-overlay"></div>
-                        <div class="mbr-section-btn text-center"><a href="page5.html" class="btn btn-primary display-4">Inscreva-se</a></div>
-                        <img src="assets/images/mbr-2-676x451.jpg" alt="Mobirise" title="">
-                    </div>
-                    <div class="card-box">
-                        <h4 class="card-title mbr-fonts-style display-7">
-                            Code Girl</h4>
-                        <p class="mbr-text mbr-fonts-style display-7">O Code Girl é um evento que visa estimular a participação feminina no Mercado de TI.<br></p>
-                    </div>
-                </div>
+            <?php } ?> 
             </div>
 
             

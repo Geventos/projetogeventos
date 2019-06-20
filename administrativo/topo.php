@@ -7,7 +7,7 @@
 	</nav>
 	<section class="title-bar">
 		<div class="logo">
-			<h1><a href="homeroot"><img src="../img/logo.png" alt="" />SisGEv</a></h1>
+			<h1><a href="index"><img src="../img/logo.png" alt="" />SisGEv</a></h1>
 		</div>
 		
 		<div class="header-right">

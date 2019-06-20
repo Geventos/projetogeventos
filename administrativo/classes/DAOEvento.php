@@ -1,6 +1,6 @@
 <?php
-require_once("classes/Conexao.php");
-require_once("classes/Evento.php");
+require_once("Conexao.php");
+require_once("Evento.php");
 class DAOEvento {
     private $conexao;
     
