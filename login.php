@@ -60,7 +60,7 @@ session_start();
                   </div>
                   <div class=col-lg-8 style="position: absolute; left: -40px; top: 200px;">
                     <span class="input-group-btn">
-                      <input onclick="window.location='cadastrousuario.php';" type="button" class="btn btn-form btn-danger display-4" value="CADASTRAR">
+                      <input onclick="window.location='cadastro-usuario.php';" type="button" class="btn btn-form btn-danger display-4" value="CADASTRAR">
                     </span>
                   </div>
                   <div class=col-lg-8 style="position: absolute; left: 150px; top: 200px;">
