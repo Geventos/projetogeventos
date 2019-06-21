@@ -9,7 +9,7 @@ class DAOEvento {
     }
     
     public function criar($evento) {
-        $sql = "insert into evento(nome, data_ini, data_fim, sobre, programacao, contatos, banner, logo, url) values('";
+        $sql = "insert into evento(nome, data_ini, data_fim, sobre, programacao, contatos, banner, logo) values('";
         $sql = $sql . $evento->getNome() . "','";
         $sql = $sql . $evento->getDatainicio() . "','";
         $sql = $sql . $evento->getDatafim() . "','";
@@ -17,8 +17,7 @@ class DAOEvento {
         $sql = $sql . $evento->getProgramacao() . "','";
         $sql = $sql . $evento->getContatos() . "','";
         $sql = $sql . $evento->getBanner() . "','";
-        $sql = $sql . $evento->getLogo() . "','";
-        $sql = $sql . $evento->getUrlpersonalizada() . "');";
+        $sql = $sql . $evento->getLogo() . "')";
         $banco = $this->conexao->getBanco();
         $banco->query($sql);
         $linhas = mysqli_affected_rows($banco);        
@@ -85,20 +84,19 @@ class DAOEvento {
         $sql = $sql . $evento->getProgramacao() . "', contatos='";
         $sql = $sql . $evento->getContatos() . "', banner='";
         $sql = $sql . $evento->getBanner() . "', logo='";
-        $sql = $sql . $evento->getLogo() . "', url='";
-        $sql = $sql . $evento->getUrlpersonalizada() . "' where id_evento='" . $id_evento . "';";
+        $sql = $sql . $evento->getLogo() . "';";
         $banco = $this->conexao->getBanco();
         $banco->query($sql);
         $linhas = mysqli_affected_rows($banco);        
         if($linhas == 1){
             echo "<script type='text/javascript'>
                     alert('Atualização Efetuada com Sucesso!');
-                    location.href='detalhes-evento.php?id_evento=$id_evento';
+                    location.href='detalhes-evento-root.php?id_evento=$id_evento';
                 </script>";
          }else{
             echo "<script type='text/javascript'>
                     alert('Atualização NÃO efetuada!');
-                    location.href='detalhes-evento.php?id_evento=$id_evento';
+                    location.href='detalhes-evento-root.php?id_evento=$id_evento';
                 </script>";
         }
     }

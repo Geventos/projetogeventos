@@ -39,7 +39,7 @@
     
     <div class="container">
         <h2 class="mbr-section-title pb-3 align-center mbr-fonts-style display-1">
-            Eventos destaques</h2>
+            Eventos</h2>
         
         <div class="media-container-row pt-5 ">
           <?php while ($evento = mysqli_fetch_array($eventos)){?>

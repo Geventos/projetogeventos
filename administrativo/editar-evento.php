@@ -100,12 +100,12 @@
 											<textarea class="form-control" name="programacao" id="programacao"><?php echo $linha['programacao'];?></textarea>
 										</div>
 
-											<div class="col-sm-12">												
+											<!--<div class="col-sm-12">												
 												<label for="url">
 													URL Personalizada:
 												</label>
 												<input type="text" class="form-control" id="url" name="url" placeholder="Como você deseja o link do evento.">			
-											</div>
+											</div>-->
 										
 									</div>
 									<hr>
@@ -139,7 +139,7 @@
 </html>
 <?php
 	if($_POST){
-	    $evento = new Evento($_POST['nomeevento'], $_POST['sobre'], $_POST['datainicio'], $_POST['datafim'], $_POST['programacao'], $_POST['contatos']);	    
+	    $evento = new Evento($_POST['nomeevento'], $_POST['datainicio'], $_POST['datafim'], $_POST['sobreevento'], $_POST['programacao'], $_POST['contatos'], $_POST['banner'], $_POST['logo']);	    
 	    $dao = (new DAOEvento())->Atualizar($evento, $id_evento); 	           
 	}
 ?>

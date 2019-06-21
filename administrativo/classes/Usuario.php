@@ -5,11 +5,11 @@ class Usuario {
     private $senha;
     private $cpf;
     
-    function __construct($nomecompleto, $email, $senha, $cpf) {
+    function __construct($nomecompleto, $email, $senha) {
         $this->nomecompleto = $nomecompleto;
         $this->email = $email;
         $this->senha = $senha;
-        $this->cpf = $cpf;
+        
     }
     
     function getNomecompleto() {
@@ -31,11 +31,4 @@ class Usuario {
         $this->senha = $senha;
     }   
     
-    function getCpf() {
-        return $this->cpf;
-    }
-
-    function setCpf($cpf) {
-        $this->cpf = $cpf;
-    }
 }

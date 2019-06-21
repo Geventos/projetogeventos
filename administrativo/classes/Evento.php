@@ -10,7 +10,7 @@ class Evento {
     private $logo;
     private $urlpersonalizada;
     
-    public function Evento($nome, $sobre, $datainicio, $datafim, $programacao, $contatos, $banner, $logo, $urlpersonalizada) {
+    public function Evento($nome, $sobre, $datainicio, $datafim, $programacao, $contatos, $banner, $logo) {
         $this->setNome($nome);
         $this->setSobre($sobre);
         $this->setDatainicio($datainicio);
@@ -19,7 +19,7 @@ class Evento {
         $this->setContatos($contatos);
         $this->setContatos($banner);
         $this->setContatos($logo);
-        $this->setContatos($urlpersonalizada);
+        
     }
     
     public function getNome() {
@@ -46,9 +46,7 @@ class Evento {
     public function getLogo() {
         return $this->logo;
     }
-    public function getUrl() {
-        return $this->urlpersonalizada;
-    }
+    
     public function setNome($nome) {
         $this->nome = $nome;
     }
@@ -73,7 +71,5 @@ class Evento {
     public function setLogo($logo) {
         $this->logo = $logo;
     } 
-    public function setUrl($urlpersonalizada) {
-        $this->urlpersonalizada = $urlpersonalizada;
-    }        
+           
 }

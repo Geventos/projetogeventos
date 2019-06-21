@@ -1,7 +1,7 @@
 <?php  
     require_once("administrativo/classes/DAOEvento.php");
     $id_evento = $_GET['id_evento'];
-    $linha = (new DAOEvento())->Exibir($id_evento);
+    $evento = (new DAOEvento())->exibir($id_evento);
 ?>
 
 <!DOCTYPE html>
@@ -47,10 +47,10 @@
                     <img src="assets/images/mbr-676x451.jpg" alt="Mobirise" title="">
                 </div>
                 <div class="align-left aside-content">
-                    <h2 class="mbr-title pt-2 mbr-fonts-style display-2"> <?php echo $linha['nome']?></h2>
+                    <h2 class="mbr-title pt-2 mbr-fonts-style display-2"> <?php echo $evento['nome']?></h2>
                     <div class="mbr-section-text">
                         <p class="mbr-text text1 pt-2 mbr-light mbr-fonts-style display-7">
-                            <?php echo $linha['sobre'];?><br><br><strong>LOCAL: </strong> Centro de Tecnologia / UFRN<br><strong>DATA:</strong> <?php echo $linha['data_ini'];?><br><strong>HORÁRIO: </strong> 08h00<br></p>
+                            <?php echo $evento['sobre'];?><br><br><strong>LOCAL: </strong> Centro de Tecnologia / UFRN<br><strong>DATA:</strong> <?php echo $evento['data_ini'];?><br><strong>HORÁRIO: </strong> 08h00<br></p>
                         
                     </div>
                     <!--Btn-->
@@ -60,6 +60,7 @@
         </div>
     </div>
 </section>
+<?php require_once("rodapesite.php"); ?>
 
 
   <script src="assets/web/assets/jquery/jquery.min.js"></script>

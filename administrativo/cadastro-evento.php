@@ -55,7 +55,7 @@
 									<p>Os campos com (*) são obrigatórios o preenchimento.</p>
 								</div>
 								<div class="form-body">
-									<form method="post" action="cadastroevento.php" >
+									<form method="post" action="cadastro-evento.php" >
 										<div class="row">
 											<div class="col-sm-8">
 												<label for="nomeevento">
@@ -113,12 +113,12 @@
 													<textarea class="form-control" id="programacao" placeholder="Digite a programação do evento." name="programacao"></textarea>				
 											</div>
 
-											<div class="col-sm-12">												
+											<!--<div class="col-sm-12">												
 												<label for="url">
 													URL Personalizada:
 												</label>
 												<input type="text" class="form-control" id="url" name="url" placeholder="Como você deseja o link do evento.">				
-											</div>
+											</div>-->
 
 										</div>
 										<hr>
@@ -156,7 +156,7 @@
     if($_POST){
     	require_once("classes/Evento.php");
     	require_once("classes/DAOEvento.php");
-        $evento = new Evento($_POST['nomeevento'], $_POST['sobreevento'], $_POST['datainicio'], $_POST['datafim'], $_POST['programacao'], $_POST['contatos']);
+        $evento = new Evento($_POST['nomeevento'], $_POST['datainicio'], $_POST['datafim'], $_POST['sobreevento'], $_POST['programacao'], $_POST['contatos'], $_POST['banner'], $_POST['logo']);
         $dao = (new DAOEvento())->Criar($evento);        
     }
 ?>

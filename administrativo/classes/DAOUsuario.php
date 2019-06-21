@@ -9,11 +9,10 @@ class DAOUsuario {
     }
     
     public function criar($usuario) {
-        $sql = "insert into usuario(nome_completo, senha, email, cpf) values('";
+        $sql = "insert into usuario(nome_completo, senha, email) values('";
         $sql = $sql . $usuario->getNomecompleto() . "','";
         $sql = $sql . $usuario->getSenha() . "','";
-        $sql = $sql . $usuario->getEmail() . "','";
-        $sql = $sql . $usuario->getCpf() . "')";
+        $sql = $sql . $usuario->getEmail() . "')";
         $banco = $this->conexao->getBanco();
         $banco->query($sql);
         $linhas = mysqli_affected_rows($banco);

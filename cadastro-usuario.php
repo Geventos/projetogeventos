@@ -81,7 +81,7 @@
     if($_POST){
         require_once("classes/Usuario.php");
         require_once("classes/DAOUsuario.php");
-        $usuario = new Usuario($_POST['nome'], $_POST['email'], $_POST['senha']);
+        $usuario = new Usuario($_POST['nome'], $_POST['senha'], $_POST['email']);
         $dao = (new DAOUsuario())->criar($usuario);        
     }
 ?>

@@ -23,6 +23,7 @@
 <?php
     require_once("menutopo.php");
   ?>
+  <div>
 <section class="mbr-section form1 cid-r5ll0QmIUj" id="form1-8">
   <div class="col-md-9 multi-horizontal">
        <h3 class="mbr-section-title align-center pb-3 mbr-fonts-style display-2"> Inscrição no Evento<?php echo $linha['nome']?></h3> 
@@ -57,6 +58,7 @@
 </form> 
 </div>
 </section>
+</div>
 
 <?php require_once("rodapesite.php"); ?>
  </body>
