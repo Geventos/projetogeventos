@@ -24,7 +24,7 @@
 	?>
 </head>
 <body class="dashboard-page">
-	<!--MENU e TOPO-->
+	<!-- MENU e TOPO -->
 	<?php
 	include("menu.php");
 	include("topo.php");
@@ -63,18 +63,34 @@
 										</div>
 									</div>
 									<div class="row">
-										<div class="col-sm-8">
-											<label for="sobre">
-												Sobre o Evento:
-											</label>
-											<textarea class="form-control" name="sobre" id="sobre"><?php echo $linha['sobre'];?></textarea>
-										</div>
+											<div class="col-sm-8">												
+												<label for="sobreevento">
+													Sobre o Evento:
+												</label>
+												<textarea class="form-control" id="sobreevento" name="sobreevento" placeholder="Digite informações sobre o evento."></textarea>			
+											</div>
+
 										<div class="col-sm-4">
 											<label for="contatos">
 												Contatos:
 											</label>
 											<textarea class="form-control" name="contatos" id="contatos"><?php echo $linha['contatos'];?></textarea>
 										</div>
+
+											<div class="col-sm-6">
+												<label for="logo">
+													Logo:
+												</label>
+												<input type="file" name="logo" id="logo">
+											</div>
+
+											<div class="col-sm-6">
+												<label for="banner">
+													Banner:
+												</label>
+												<input type="file" name="banner" id="banner">
+											</div>
+
 									</div>
 									<div class="row">
 										<div class="col-sm-12">
@@ -83,6 +99,14 @@
 											</label>
 											<textarea class="form-control" name="programacao" id="programacao"><?php echo $linha['programacao'];?></textarea>
 										</div>
+
+											<div class="col-sm-12">												
+												<label for="url">
+													URL Personalizada:
+												</label>
+												<input type="text" class="form-control" id="url" name="url" placeholder="Como você deseja o link do evento.">			
+											</div>
+										
 									</div>
 									<hr>
 									<div class="row">

@@ -89,6 +89,21 @@
 												</label>
 												<textarea class="form-control" id="contatos" name="contatos" placeholder="Digite as informações de contatos do evento."></textarea>				
 											</div>
+
+											<div class="col-sm-6">
+												<label for="logo">
+													Logo:
+												</label>
+												<input type="file" name="logo" id="logo">
+											</div>
+
+											<div class="col-sm-6">
+												<label for="banner">
+													Banner:
+												</label>
+												<input type="file" name="banner" id="banner">
+											</div>
+
 										</div>
 										<div class="row">
 											<div class="col-sm-12">												
@@ -97,6 +112,14 @@
 													</label>
 													<textarea class="form-control" id="programacao" placeholder="Digite a programação do evento." name="programacao"></textarea>				
 											</div>
+
+											<div class="col-sm-12">												
+												<label for="url">
+													URL Personalizada:
+												</label>
+												<input type="text" class="form-control" id="url" name="url" placeholder="Como você deseja o link do evento.">				
+											</div>
+
 										</div>
 										<hr>
 										<div class="row">
