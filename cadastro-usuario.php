@@ -65,7 +65,7 @@
                 </form>
             </div>
         </section>
-        <?php require_once("rodapefe.php"); ?>
+        <?php require_once("rodapesite.php"); ?>
         <script src="assets/web/assets/jquery/jquery.min.js"></script>
         <script src="assets/popper/popper.min.js"></script>
         <script src="assets/tether/tether.min.js"></script>
@@ -82,6 +82,6 @@
         require_once("classes/Usuario.php");
         require_once("classes/DAOUsuario.php");
         $usuario = new Usuario($_POST['nome'], $_POST['email'], $_POST['senha']);
-        $dao = (new DAOUsuario())->Criar($usuario);        
+        $dao = (new DAOUsuario())->criar($usuario);        
     }
 ?>
