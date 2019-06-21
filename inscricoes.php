@@ -1,7 +1,7 @@
 <?php  
-    require_once("administrativo/classes/DAOEvento.php");
+    require_once("./administrativo/classes/DAOEvento.php");
     //$id_evento = $_GET['id_evento'];
-    $linha = (new DAOEvento())->Exibir(3);
+    $linha = (new DAOEvento())->exibir(3);
 ?>
 
 <!DOCTYPE html>
@@ -37,8 +37,8 @@
       <input type="nome" class="form-control" name="nome" placeholder="Nome">
     </div>
     <div class="form-group col-md-20">
-      <label for="inputEmail">E-MAIL</label>
-      <input type="nome" class="form-control" name="nome" placeholder="Email">
+      <label for="email">E-MAIL</label>
+      <input type="text" class="form-control" name="email" placeholder="Email">
     </div>
     <div class="form-group col-md-20">
       <label for="inputPassword">CPF</label>
@@ -64,10 +64,10 @@
  </html>
 
  <?php
-    //if($_POST){
-      //require_once("classes/Inscrito.php");
-      //require_once("classes/DAOInscrito.php");
-        //$inscrito = new Inscrito($_POST['nome'], $_POST['cpf'], $_POST['instituicao']);
-        //$dao = (new DAOInscrito())->Inscricao($inscrito, $id_evento);        
-    //}
+    if($_POST){
+      require_once("administrativo/classes/Inscrito.php");
+      require_once("administrativo/classes/DAOInscrito.php");
+        $inscrito = new Inscrito($_POST['nome'], $_POST['email'], $_POST['cpf'], $_POST['instituicao']);
+        $dao = (new DAOInscrito())->inscricao($inscrito, $id_evento);        
+    }
 ?>
